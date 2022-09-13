@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ header{
+   background-color: #F9F8FC;
+ }
+
+ #logo{
+   margin: auto;
+   height: 250px;
+   width: 320px;
+   text-align: center;
+ }
+
+ 
+
+nav{
+  height: 60px;
+  background-color:#dfdfdf;
+  text-align: center;
+}
+
+nav ul{
+   list-style: none;
+   display: inline-block;
+   padding:18px;
+}
+
+nav ul li{
+    float: left;
+    margin-top: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+}
+
+nav ul li a:hover{
+  background-color: #48d4ff;
+}
