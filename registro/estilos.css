@@ -7,6 +7,7 @@
 }
 html{
     box-sizing: border-box;
+    background-color: var(--azulOscuro);
 }
 
 *,*::after, *::before{
@@ -23,9 +24,10 @@ body{
 
 
 .contenedor{
+    display: grid;
     margin: 0 auto;
     max-width: 1200px;
-    width: 95%;
+    width: 80%;
 }
 
 .imagen-formulario{
@@ -36,14 +38,13 @@ body{
     position: relative;
 }
 .imagen-formulario::before{
-   content: '';
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   background: linear-gradient(to right,rgba(141,169,196,.5), rgba(19, 64, 116, .5) );
-   
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right,rgba(141,169,196,.5), rgba(19, 64, 116, .5) );
 }
 
 @media(min-width:768px){
@@ -63,12 +64,21 @@ body{
     .contenedor-formulario{
         display: flex;
     }
+    #grid-register{
+        grid-template-areas:
+        "title title"
+        "content-left"
+        "content-right";
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
+
+
 
 .formulario{
     padding: 50px;
     background-color: var(--azul);
-    width: 80%;
+    width: 100%;
 }
 .texto-formulario h2, .input label, .password-olvidada a, .texto-formulario p{
     color: var(--blanco);
@@ -108,7 +118,6 @@ body{
     transition: background-color .3s ease-in-out;
 }
 .input input[type="submit"]:hover{
-  
     cursor: pointer;
     background-color: var(--azulOscuro);
 }
@@ -127,15 +136,15 @@ body{
 
     #title {
         grid-area: title;
-        background-color: #8ca0ff;
+        background-color: var(--azul);
     }
 
     #content-register-left {
         grid-area: content-left;
-        background-color: #ffa08c;
+        background-color: var(--azul);
     }
 
     #content-register-right {
         grid-area: content-right;
-        background-color: #ffff64;
-    }
+        background-color: var(--azul);
+    }}
