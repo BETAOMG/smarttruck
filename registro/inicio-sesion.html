@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css">
+</head>
+
+<body>
+  <div id="grid-register">
+    <div id="title">HHHH</div>
+    <div id="content-register-left">TEST</div>
+    <div id="content-register-right">TEST</div>
+  </div>
+
+
+    <div class="contenedor-formulario contenedor">
+      <div class="imagen-formulario"></div>
+
+
+      <img src="./assets/images/logo-dark.svg" alt="">
+
+        <form action="" class="formulario">
+
+          <div class="texto-formulario">
+            <h2>REGISTRO</h2>
+          </div>
+
+            <div class="field">
+              <label class="label has-text-white">Nombre</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Nombre" title="nombre de usuario">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label has-text-white">Apellido</label>
+              <input class="input" type="text" placeholder="Apellido" title="apellido de usuario">
+            </div>
+
+            <div class="field">
+              <label class="label has-text-white">Email</label>
+                <input class="input" type="email" placeholder="Email">
+            </div>
+
+            <div class="field">
+              <label class="label has-text-white">Genero</label>
+              <div class="control">
+                <div class="select">
+                  <select title="selecciona tu género">
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label has-text-white">Rol</label>
+              <div class="control">
+                <div class="select">
+                  <select title="selecciona tu rol">
+                    <option>Seleccionar</option>
+                    <option>rol1</option>
+                    <option>rol2</option>
+                    <option>rol3</option>
+                    <option>rol4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+        </form>
+
+
+        <form class="formulario">
+          <div class="field">
+            <br>
+          </div>
+
+          <div class="field">
+          <label class="label has-text-white">Telefono</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Telefono">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label has-text-white">Numero de identificacion/Usuario</label>
+            <input class="input" type="text" placeholder="Numero de identificacion/Usuario">
+          </div>
+
+          <div class="field">
+            <label class="label has-text-white">Contraseña</label>
+            <input class="input" type="email" placeholder="Contraseña">
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="checkbox has-text-white">
+                <input type="checkbox">
+                Acepto <a href="#" class="has-text-info	">terminos y condiciones</a>
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="radio has-text-white">
+                <input type="radio" name="question">
+                Si
+              </label>
+              <label class="radio has-text-white">
+                <input type="radio" name="question">
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button type="button" class="button is-link">Registrarse</button>
+            </div>
+            <div class="control">
+              <button type="button" class="button is-link is-light">Cancelar</button>
+            </div>
+            <div class="control">
+              <input type="reset" class="button is-link is-light">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
