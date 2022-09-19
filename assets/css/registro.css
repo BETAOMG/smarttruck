@@ -31,7 +31,7 @@ body{
 }
 
 .imagen-formulario{
-    background-image: url('../assets/images/Truck.jpg');
+    background-image: url(../images/Truck.jpg);
     background-position: center center;
     background-size: cover;
     height: 200px;
@@ -127,7 +127,6 @@ body{
     #grid-register{
         display: grid;
         width: 100%;
-        height: 250px;
         grid-template-areas:
             "title title"
             "content-left  content-right";
