@@ -1,0 +1,149 @@
+:root{
+    --azul:#134074;
+    --azulOscuro:#0B2545;
+    --azulGris:#8DA9C4;
+    --blanco:#fff;
+    --fuente:'Quicksand', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    background-color: var(--azulOscuro);
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuente);
+    background-color: var(--azulOscuro);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.contenedor{
+    display: grid;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.imagen-formulario{
+    background-image: url(../images/Truck.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+}
+.imagen-formulario::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right,rgba(141,169,196,.5), rgba(19, 64, 116, .5) );
+}
+
+@media(min-width:768px){
+    .imagen-formulario{
+        height: auto;
+        background-position: right;
+    }
+
+}
+@media(min-width:1200px){
+    .imagen-formulario{
+        background-position: center;
+    }
+}
+
+@media(min-width:768px){
+    .contenedor-formulario{
+        display: flex;
+    }
+    #grid-register{
+        grid-template-areas:
+        "title title"
+        "content-left"
+        "content-right";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+.formulario{
+    padding: 50px;
+    background-color: var(--azul);
+    width: 100%;
+}
+.texto-formulario h2, .input label, .password-olvidada a, .texto-formulario p{
+    color: var(--blanco);
+}
+.texto-formulario h2{
+    font-size: 40px;
+    text-align: center;
+}
+.texto-formulario p{
+    font-size: 22px;
+    text-align: center;
+}
+.input label{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.password-olvidada a{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 22px;
+}
+.input input{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 5px;
+    outline: none;
+}
+.input input[type="submit"]{
+    background-color: var(--azulGris);
+    color: var(--blanco);
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    transition: background-color .3s ease-in-out;
+}
+.input input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: var(--azulOscuro);
+}
+
+
+
+    #grid-register{
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+            "title title"
+            "content-left  content-right";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #title {
+        grid-area: title;
+        background-color: var(--azul);
+    }
+
+    #content-register-left {
+        grid-area: content-left;
+        background-color: var(--azul);
+    }
+
+    #content-register-right {
+        grid-area: content-right;
+        background-color: var(--azul);
+    }}
