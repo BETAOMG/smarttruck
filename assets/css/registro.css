@@ -19,12 +19,12 @@ body{
     background-color: var(--azulOscuro);
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
 
 .contenedor{
-    display: grid;
     margin: 0 auto;
     max-width: 1200px;
     width: 80%;
@@ -71,13 +71,9 @@ body{
         "content-right";
     grid-template-columns: 1fr 1fr 1fr;
 }
-
-
-
-
 .formulario{
     padding: 50px;
-    background-color: var(--azul);
+    
     width: 100%;
 }
 .texto-formulario h2, .input label, .password-olvidada a, .texto-formulario p{
@@ -125,6 +121,8 @@ body{
 
 
     #grid-register{
+        background-color: var(--azul);
+        border-radius: 15px;
         display: grid;
         width: 100%;
         grid-template-areas:
@@ -135,15 +133,26 @@ body{
 
     #title {
         grid-area: title;
-        background-color: var(--azul);
+        
     }
 
     #content-register-left {
         grid-area: content-left;
-        background-color: var(--azul);
+        
     }
 
     #content-register-right {
         grid-area: content-right;
-        background-color: var(--azul);
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-right: 2.5rem;
     }}
+
+    @media(max-width:768px){
+        main{
+            margin-top: 15rem;
+        }
+    }
