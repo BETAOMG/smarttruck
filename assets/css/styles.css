@@ -1,5 +1,15 @@
+:root{
+    --azul:#134074;
+    --azulOscuro:#0B2545;
+    --azulGris:#8DA9C4;
+    --blanco:#fff;
+    --fuente:'Quicksand', sans-serif;
+}
 *{
     box-sizing: border-box;
+}
+body{
+    background-color:var(--azul);
 }
 main{
     display: flex;
