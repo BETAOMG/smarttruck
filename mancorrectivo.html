@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Truck - Inicio</title>
+    <title>Smart Truck - Mantenimiento</title>
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="./assets/css/Inicio.css">
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
@@ -12,8 +12,8 @@
 </head>
 <body class="has-background-light">
   
-    <div id="logo">
-        <img src="./assets/images/logo.svg" alt="logo">
+    <div id="logo" >
+        <img src="./assets/images/logo.svg"  alt="logo" >
         
      </div>
      <nav class="navbar has-background-link-light" role="navigation" aria-label="main navigation" >
@@ -38,20 +38,20 @@
                     </a>
             
                     <div class="navbar-dropdown">
-                      <a class="navbar-item" href="./proveedores.html">
+                      <a class="navbar-item">
                         Registrar
                       </a>
                       <a class="navbar-item" href="./modificarprov.html">
                         Modificar
                       </a>
-                      <a class="navbar-item">
+                      <a class="navbar-item" href="./eliminarprov.htm">
                         Eliminar
                       </a>
                      
                     </div>
                   </div>
                   <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-background-link-light" href="./mantenimiento.html">
+                    <a class="navbar-link has-background-link-light">
                       Mantenimiento
                     </a>
             
@@ -115,7 +115,7 @@
                     </div>
                     </div>
                     <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link has-background-link-light" href="./vehiculos.html">
+                      <a class="navbar-link has-background-link-light">
                         Vehiculos
                       </a>
               
@@ -168,11 +168,11 @@
                 </div>           
                 <div class="navbar-end">
                   <div class="navbar-item">
-                    <div class="buttons" >
-                      <a class="button is-info " href="./Registro.html">
+                    <div class="buttons">
+                      <a class="button is-info">
                         <strong>Regitrarse</strong>
                       </a>
-                      <a class="hsl(212,72,26)">
+                      <a class="button is-light">
                         Iniciar sesion
                       </a>
                     </div>
@@ -184,13 +184,47 @@
       </nav>
 
    </header>
-
-   <div class="container">
-    <div class="notification  mt-6">
-      This container is <strong>centered</strong> on desktop and larger viewports.
+   <article class="panel is-link">
+    <p class="panel-heading">
+      Preventivo
+    </p>
+    <p class="panel-tabs">
+      <a  href="./mantenimiento.html">Todo</a>
+      <a href="./manpreventivo.html">Preventivo</a>
+      <a href="./manproductivo.html">Productivo</a>
+      <a  class="is-active">Correctivo</a>
+    </p>
+    <div class="panel-block">
+      <p class="control has-icons-left">
+        <input class="input is-link" type="text" placeholder="Buscar en Correctivo">
+        <span class="icon is-left">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </span>
+      </p>
     </div>
-  </div>
-
-
+    <a class="panel-block is-active">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      bulma
+    </a>
+    <a class="panel-block">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      marksheet
+    </a>
+    <a class="panel-block">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      minireset.css
+    </a>
+    <a class="panel-block">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      jgthms.github.io
+    </a>
+  </article>
 </body>
-</html>

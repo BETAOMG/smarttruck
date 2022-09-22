@@ -1,0 +1,9 @@
+.a {
+    float: left;
+    padding: 10px;
+  }
+  .a div{
+    height: 100px;
+    width: 100px; 
+    background-color: #2980B9;
+  }

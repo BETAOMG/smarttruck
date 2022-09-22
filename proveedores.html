@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Truck - Inicio</title>
+    <title>Smart Truck - Proveedores</title>
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="./assets/css/Inicio.css">
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
@@ -12,8 +12,8 @@
 </head>
 <body class="has-background-light">
   
-    <div id="logo">
-        <img src="./assets/images/logo.svg" alt="logo">
+    <div id="logo" >
+        <img src="./assets/images/logo.svg"  alt="logo" >
         
      </div>
      <nav class="navbar has-background-link-light" role="navigation" aria-label="main navigation" >
@@ -38,13 +38,13 @@
                     </a>
             
                     <div class="navbar-dropdown">
-                      <a class="navbar-item" href="./proveedores.html">
+                      <a class="navbar-item">
                         Registrar
                       </a>
                       <a class="navbar-item" href="./modificarprov.html">
                         Modificar
                       </a>
-                      <a class="navbar-item">
+                      <a class="navbar-item" href="./eliminarprov.htm">
                         Eliminar
                       </a>
                      
@@ -115,7 +115,7 @@
                     </div>
                     </div>
                     <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link has-background-link-light" href="./vehiculos.html">
+                      <a class="navbar-link has-background-link-light">
                         Vehiculos
                       </a>
               
@@ -168,11 +168,11 @@
                 </div>           
                 <div class="navbar-end">
                   <div class="navbar-item">
-                    <div class="buttons" >
-                      <a class="button is-info " href="./Registro.html">
+                    <div class="buttons">
+                      <a class="button is-info">
                         <strong>Regitrarse</strong>
                       </a>
-                      <a class="hsl(212,72,26)">
+                      <a class="button is-light">
                         Iniciar sesion
                       </a>
                     </div>
@@ -185,12 +185,143 @@
 
    </header>
 
-   <div class="container">
-    <div class="notification  mt-6">
-      This container is <strong>centered</strong> on desktop and larger viewports.
+   <div class="container  ">
+    <div class="notification  mt-6  is-flex is-justify-content-center ">
+
+        <h1 class="title is-1 ">Registro</h1>
     </div>
   </div>
+  <div class="columns p-6">
+    <div class="column is-half "><div class="field">
+        <label class="label">Nombre de la empresa</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Nombre de la empresa">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Nit de la empresa</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="text" placeholder="Nit de la empresa">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        
+      </div>
+      
+      <div class="field">
+        <label class="label">Propietario de la empresa</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-danger" type="email" placeholder="Propietario de la empresa" >
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
 
+        
+        
+      </div>
+      
+      <div class="field">
+        <label class="label">Tipo de Producto</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Seleccionar</option>
+              <option>Liquido</option>
+              <option>Solida</option>
+              <option>Ganado</option>
+            </select>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+    <div class="column"><div class="field">
+        <label class="label">Numero de telefono</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Numero de telefono">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Ciudad de ubicacion</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="text" placeholder="Ciudad de ubicacion"> 
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        
+      </div>
+      
+      <div class="field">
+        <label class="label">Direccion</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-danger" type="email" placeholder="Direccion" >
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        
+        
+      </div>
+   
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Acepto <a href="#">terminos y condiciones</a>
+          </label>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="question">
+            Si
+          </label>
+          <label class="radio">
+            <input type="radio" name="question">
+            No
+          </label>
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Registrarse</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancelar</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Limpiar</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+<footer>
+  <hr>
+  
 
 </body>
 </html>
