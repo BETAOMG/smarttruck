@@ -1,127 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulario CSS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/registro.css">
     <script src="./assets/javascript/show-password.js"></script>
+    <title>Registro</title>
 </head>
-
 <body>
-  <main>
-    <div class="contenedor-formulario contenedor">
-      <div id="grid-register">
-        <div class="imagen-formulario"></div>
-  
-        <div id="title">
-          <div class="texto-formulario">
-            <h2 class="is-text-align-center title is-2 has-text-white">Registro</h2>
-          </div>
+
+    <section class="contenedor-formulario contenedor">
+        
+        <div class="columns">
+            <div class="imagen-formulario"></div>
+            <div class="column is-full">
+                <h2 class="is-text-align-center title is-2 has-text-white">Registro</h2>
+            </div>
         </div>
-  
-        <div id="content-register-left">
-          <form action="" class="formulario">
-              <div class="field">
-                <label class="label has-text-white">Nombre</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Nombre" title="nombre de usuario" required autofocus>
-                </div>
-              </div>
-  
-              <div class="field">
-                <label class="label has-text-white">Apellido</label>
-                <input class="input" type="text" placeholder="Apellido" title="apellido de usuario" required>
-              </div>
-  
-              <div class="field">
-                <label class="label has-text-white">Email</label>
-                  <input class="input" type="email" placeholder="Email" required>
-              </div>
-  
-              <div class="field">
-                <label class="label has-text-white">Genero</label>
-                <div class="control">
-                  <div class="select">
-                    <select title="selecciona tu género">
-                      <option>Masculino</option>
-                      <option>Femenino</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="field">
-                <label class="label has-text-white">Rol</label>
-                <div class="control">
-                  <div class="select">
-                    <select title="selecciona tu rol">
-                      <option>Seleccionar</option>
-                      <option>rol1</option>
-                      <option>rol2</option>
-                      <option>rol3</option>
-                      <option>rol4</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-        </div>
-  
-        <div id="content-register-right">
+        <form action="">
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="field">
+                        <label class="label has-text-white">Nombre</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Nombre" title="nombre de usuario" required autofocus>
+                        </div>
+                    </div>
           
-  
-            <div class="field">
-            <label class="label has-text-white">Telefono</label>
-              <div class="control">
-                <input class="input" type="number" placeholder="Telefono" required>
-              </div>
-            </div>
-  
-            <div class="field">
-              <label class="label has-text-white">Numero de identificacion/Usuario</label>
-              <input class="input" type="number" placeholder="Numero de identificacion/Usuario" required>
-            </div>
-  
-            <div class="field">
-              <label class="label has-text-white">Contraseña</label>
-              <input class="input" id="typepass" type="password" placeholder="Contraseña" required>
-              <input type="checkbox" onclick="Toggle()">
-              <b class="has-text-white">Mostrar Contraseña</b>
-            </div>
-  
-            <div class="field">
-              <div class="control">
-                <label class="checkbox has-text-white">
-                  <input type="checkbox" required checked>
-                  Acepto <a href="#" class="has-text-info">terminos y condiciones</a>
-                </label>
-              </div>
-            </div>
+                    <div class="field">
+                        <label class="label has-text-white">Apellido</label>
+                        <input class="input" type="text" placeholder="Apellido" title="apellido de usuario" required>
+                    </div>
 
-            <div class="field is-grouped">
-              <div class="control">
-                  <button type="submit" class="button is-link">Registrarse</button>
-              </div>
+                    <div class="field">
+                        <label class="label has-text-white">Email</label>
+                        <input class="input" type="email" placeholder="Email" required>
+                    </div>
+          
+                    <div class="field">
+                        <label class="label has-text-white">Genero</label>
+                        <div class="control">
+                            <div class="select">
+                                <select title="selecciona tu género">
+                                    <option>Masculino</option>
+                                    <option>Femenino</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
 
-              <div class="control">
-                <button type="button" class="button is-link is-light">Cancelar</button>
-              </div>
+                    <div class="field">
+                        <label class="label has-text-white">Rol</label>
+                        <div class="control">
+                            <div class="select">
+                                <select title="selecciona tu rol">
+                                    <option>Seleccionar</option>
+                                    <option>rol1</option>
+                                    <option>rol2</option>
+                                    <option>rol3</option>
+                                    <option>rol4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="field">
+                        <label class="label has-text-white">Telefono</label>
+                        <div class="control">
+                            <input class="input" type="number" placeholder="Telefono" required>
+                        </div>
+                    </div>
               
-              <div class="control">
-                <input type="reset" class="button is-link is-light">
-              </div>
+                    <div class="field">
+                        <label class="label has-text-white">Numero de identificacion/Usuario</label>
+                        <input class="input" type="number" placeholder="Numero de identificacion/Usuario" required>
+                    </div>
+              
+                    <div class="field">
+                        <label class="label has-text-white">Contraseña</label>
+                        <input class="input" id="typepass" type="password" placeholder="Contraseña" required>
+                        <input type="checkbox" onclick="Toggle()">
+                        <b class="has-text-white">Mostrar Contraseña</b>
+                    </div>
+              
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox has-text-white">
+                            <input type="checkbox" required checked>
+                            Acepto
+                            <a href="#" class="has-text-info">
+                                terminos y condiciones
+                            </a>
+                            </label>
+                        </div>
+                    </div>
+            
+                    <div class="field is-grouped">
+                        <div class="control grouped">
+                            <button type="submit" class="button is-link">Registrarse</button>
+                        </div>
+            
+                        <div class="control grouped">
+                            <button type="button" class="button is-link is-light">Cancelar</button>
+                        </div>
+                          
+                        <div class="control grouped">
+                            <input type="reset" class="button is-link is-light">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </form>
-        </div>
-      </div>
-    </div>
-  </main>
+    </section>
 </body>
 </html>

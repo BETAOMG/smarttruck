@@ -1,6 +1,3 @@
-is-info is-light {
-    border-bottom: 0ch;
- }
 :root{
     --azul:#134074;
     --azulOscuro:#0B2545;
@@ -9,7 +6,6 @@ is-info is-light {
     --fuente:'Quicksand', sans-serif;
 }
 html{
-    box-sizing: border-box;
     background-color: var(--azulOscuro);
 }
 
@@ -19,8 +15,6 @@ html{
 
 body{
     font-family: var(--fuente);
-    background-color: var(--azulOscuro);
-    display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -28,9 +22,12 @@ body{
 
 
 .contenedor{
-    margin: 0 auto;
-    max-width: 1200px;
+    background-color: var(--azul);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
     width: 80%;
+    border-radius: 10px;
 }
 
 .imagen-formulario{
@@ -51,6 +48,10 @@ body{
 }
 
 @media(min-width:768px){
+    body{
+        display: flex;
+        align-content: center;
+    }
     .imagen-formulario{
         height: auto;
         background-position: right;
@@ -64,21 +65,12 @@ body{
 }
 
 @media(min-width:768px){
-    .contenedor-formulario{
-        display: flex;
-    }
-    #grid-register{
-        grid-template-areas:
-        "title title"
-        "content-left"
-        "content-right";
-    grid-template-columns: 1fr 1fr 1fr;
-}
+    
 .formulario{
     padding: 50px;
-    
     width: 100%;
 }
+
 .texto-formulario h2, .input label, .password-olvidada a, .texto-formulario p{
     color: var(--blanco);
 }
@@ -121,42 +113,14 @@ body{
     background-color: var(--azulOscuro);
 }
 
+}
 
-
-    #grid-register{
-        background-color: var(--azul);
-        border-radius: 15px;
-        display: grid;
-        width: 100%;
-        grid-template-areas:
-            "title title"
-            "content-left  content-right";
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #title {
-        grid-area: title;
-        
-    }
-
-    #content-register-left {
-        grid-area: content-left;
-        
-    }
-
-    #content-register-right {
-        grid-area: content-right;
-        
-        display: flex;
+@media(max-width:977px){
+    .is-grouped{
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        padding-right: 2.5rem;
-    }}
-
-    @media(max-width:768px){
-        main{
-            margin-top: 15rem;
-        }
+        
     }
-
+    div.control.grouped{
+        margin-bottom: 1rem !important;
+    }
+}
