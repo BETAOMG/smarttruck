@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: rgb(87, 161, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    height: 50px;
+    margin: 50px;
+}
+
+.social-icon-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+    background-image: none;
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+ background-color: blue;
+ filter: invert(1);    
+}
+
+.social-icon::nth-of-type(2){
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F664914332475068338%2F&psig=AOvVaw2wUdtiddldhlcxsanQR1MU&ust=1664760783258000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCNj7rqqzwPoCFQAAAAAdAAAAABAE);
+}
+
+.social-icon::nth-of-type(3){
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.dreamstime.com%2Ficono-de-twitter-image134700859&psig=AOvVaw18izaDmdhW8KqIrsSsiNZy&ust=1664761073642000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCOjYgLW0wPoCFQAAAAAdAAAAABAE);
+}
+.social-icon::nth-of-type(4){
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fes%2Fsearch%3Fq%3Dicono%2Bde%2Bfb&psig=AOvVaw2DyZaZscNulfhQGEkpVHTY&ust=1664761099791000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCICiv8G0wPoCFQAAAAAdAAAAABAE);
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: antiquewhite;
+    font-size: 18px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: darkgray;
+    opacity: 0.3;
+    text-align: center;
+}
