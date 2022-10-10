@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Truck - Proveedores</title>
-    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <title>Smart Truck - Inicio</title>
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/normativa.css">
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
     <script src="./assets/javascript/nav-bar.js"></script>
-    <link rel="stylesheet" href="./assets/css/proveedores.css">
 </head>
 <body>
   
-    <div id="logo" >
-        <img src="./assets/images/logo-dark.svg"  alt="logo" >
-        
+    <div id="container-logo">
+        <img src="./assets/images/logo-dark.svg" alt="Smarttruck">
      </div>
-     <nav class="navbar has-background-link-light" role="navigation" aria-label="main navigation" >
-        <div class="container has-background-link-light"> 
+     <nav class="navbar nav-bar-container " role="navigation" aria-label="main navigation" >
+        <div class="container nav-bar-container"> 
             <div class="navbar-brand">
                 <a class="navbar-item" href="./Inicio.html">
-                  <img src="./assets/images/logo.svg" width="100rem" >
+                  <img src="./assets/images/logo-dark.svg" width="100rem" >
                 </a>
             
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -39,13 +38,13 @@
                     </a>
             
                     <div class="navbar-dropdown">
-                      <a class="navbar-item">
+                      <a class="navbar-item" href="./proveedores.html">
                         Registrar
                       </a>
                       <a class="navbar-item" href="./modificarprov.html">
                         Modificar
                       </a>
-                      <a class="navbar-item" href="./eliminarprov.htm">
+                      <a class="navbar-item">
                         Eliminar
                       </a>
                      
@@ -116,7 +115,7 @@
                     </div>
                     </div>
                     <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link has-background-link-light">
+                      <a class="navbar-link has-background-link-light" href="./vehiculos.html">
                         Vehiculos
                       </a>
               
@@ -169,9 +168,12 @@
                 </div>           
                 <div class="navbar-end">
                   <div class="navbar-item">
-                    <div class="buttons">
-                      <a class="button is-info">
+                    <div class="buttons" >
+                      <a class="button is-info " href="./Registro.html">
                         <strong>Regitrarse</strong>
+                      </a>
+                      <a class="hsl(212,72,26)">
+                        Iniciar sesion
                       </a>
                     </div>
                   </div>
@@ -181,104 +183,54 @@
 
       </nav>
 
-   </header>
-
-
-   <section class="contenedor-formulario contenedor">
-        
-    <div class="columns">
-        <div class="imagen-formulario"></div>
-        <div class="column is-full">
-            <h2 class="is-text-align-center title is-2 has-text-white">Registro</h2>
-        </div>
-    </div>
-    <form action="">
-        <div class="columns">
-            <div class="column is-half">
-                <div class="field">
-                    <label class="label has-text-white">Nombre de la Empresa</label>
-                    <div class="control">
-                      <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
-                    </div>
-                </div>
       
-                <div class="field">
-                    <label class="label has-text-white">Nit de la empresa</label>
-                    <input class="input" type="text" placeholder="Nit de la empresa" title="apellido de usuario" required>
-                </div>
+   
+      <section class="navegacionlateral">
+   <div>
+    <nav>
+      <ul class="normativaopciones">
+        <li>
+            <a href="#" class="active">
+                <i class="aspecto"></i>
+                Marco normativo general
+            </a>
+        </li>
+        <li><a href="#">
+                <i class="aspecto"></i>
+                Estructura empresarial
+            </a>
+        </li>
+        <li><a href="#">
+                <i class="aspecto"></i>
+                Condiciones de equipo
+            </a>
+        </li>
+        <li><a href="#"><i class="aspecto"></i>
+                Relaciones economicas
+            </a>
+        </li>
+        <li><a href="#"><i class="aspecto"></i>
+                Normas de transito
+            </a>
+        </li>
+        <li><a href="#"><i class="aspecto"></i>
+                Transporte multimodal
+            </a>
+        </li>
+        <li><a href="#"><i class="aspecto"></i>
+                Mercancias peligrosas
+            </a>
+       </li>
+       
+    </ul>
+    </nav>
+   </div>
+  </section>
+    
 
-                <div class="field">
-                    <label class="label has-text-white">Propietario de la empresa</label>
-                    <input class="input" type="text" placeholder="Propietario de la empresa" required>
-                </div>
-      
-                <div class="field">
-                    <label class="label has-text-white">Tipo de producto</label>
-                    <div class="control">
-                        <div class="select">
-                            <select title="selecciona tipo de carga">
-                                <option>Liquido</option>
-                                <option>Solido</option>
-                                <option>Ganado</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </div>
 
-            <div class="column is-half">
-                <div class="field">
-                    <label class="label has-text-white">Numero de Telefono</label>
-                    <div class="control">
-                        <input class="input" type="number" placeholder="Numero de Telefono" required>
-                    </div>
-                </div>
-          
-                <div class="field">
-                    <label class="label has-text-white">Ciudad de ubicacion</label>
-                    <input class="input" type="text" placeholder="Ciudad de ubicacion" required>
-                </div>
-          
-                <div class="field">
-                    <label class="label has-text-white">Direccion</label>
-                    <input class="input" id="typepass" type="text" placeholder="Direccion" required>
-                    
-                </div>
-          
-                <div class="field">
-                    <div class="control">
-                        <label class="checkbox has-text-white">
-                        <input type="checkbox" required checked>
-                        Acepto
-                        <a href="#" class="has-text-info">
-                            terminos y condiciones
-                        </a>
-                        </label>
-                    </div>
-                </div>
-        
-                <div class="field is-grouped">
-                    <div class="control grouped">
-                        <button type="submit" class="button is-link">Registrar</button>
-                    </div>
-        
-                    <div class="control grouped">
-                        <button type="button" class="button is-link is-light">Cancelar</button>
-                    </div>
-                      
-                    <div class="control grouped">
-                        <input type="reset" class="button is-link is-light">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
-</section>
 
-  
-<footer>
-  <hr>
-  
 
 </body>
 </html>
