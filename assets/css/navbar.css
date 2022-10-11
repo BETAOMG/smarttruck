@@ -13,7 +13,6 @@
  html{
   background-color: var(--azulOscuro);
  }
- 
 
 
 
@@ -24,16 +23,16 @@
    text-align: center;
  }
 
- 
-
 nav{
   height: 60px;
   background-color:#dfdfdf;
   text-align: center;
+  margin: 0 1rem 0 1rem;
 }
 
 .nav-bar-container{
   background-color: var(--azul);
+  border-radius: 10px;
 }
 
 nav ul{
@@ -59,8 +58,10 @@ nav ul li a:hover{
   background-color: #48d4ff;
 }
 
+.navbar-burger{
+  color: var(--blanco);
+}
 
-
-
-
-
+a:hover{
+  color: var(--azulGris);
+}
