@@ -34,6 +34,9 @@ nav{
 
 .nav-bar-container{
   background-color: var(--azul);
+  display: flex;
+  justify-content: center;
+  
 }
 
 nav ul{
