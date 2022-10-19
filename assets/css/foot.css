@@ -1,10 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    transition: 0.5s;
-
+    transition: 0.6s;
 }
 
 body{
@@ -16,14 +14,11 @@ body{
 
 footer{
     width: 100%;
-    position: absolute;
     bottom: 0;
     left: 0;
     padding: 2rem 8%;
-    background-color: rgb(87, 161, 245);
+    background-color: rgba(25, 86, 155, 0.281);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -41,31 +36,30 @@ footer{
 }
 
 .social-icon{
-    height: 50px;
-    width: 50px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50px;
+    background-color: white;
     border: 1px solid whitesmoke;
-    background-image: none;
     background-position: center;
-    background-size: 40%;
+    background-size: 90%;
     background-repeat: no-repeat;
     margin: 1rem;
 }
 
 .social-icon:hover{
- background-color: blue;
- filter: invert(1);    
+ background-color: rgb(50, 115, 255);    
 }
 
-.social-icon::nth-of-type(2){
-    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F664914332475068338%2F&psig=AOvVaw2wUdtiddldhlcxsanQR1MU&ust=1664760783258000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCNj7rqqzwPoCFQAAAAAdAAAAABAE);
+.social-icon:nth-of-type(1){
+    background-image: url(../logo/github-logo.svg);
 }
 
-.social-icon::nth-of-type(3){
-    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.dreamstime.com%2Ficono-de-twitter-image134700859&psig=AOvVaw18izaDmdhW8KqIrsSsiNZy&ust=1664761073642000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCOjYgLW0wPoCFQAAAAAdAAAAABAE);
+.social-icon:nth-of-type(2){
+    background-image: url(../logo/twitter-logo.svg);
 }
-.social-icon::nth-of-type(4){
-    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fes%2Fsearch%3Fq%3Dicono%2Bde%2Bfb&psig=AOvVaw2DyZaZscNulfhQGEkpVHTY&ust=1664761099791000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCICiv8G0wPoCFQAAAAAdAAAAABAE);
+.social-icon:nth-of-type(3){
+    background-image: url(../logo/facebook-logo.svg);
 }
 
 .footer-menu-container{
@@ -86,6 +80,6 @@ footer{
 
 .copyright{
     color: darkgray;
-    opacity: 0.3;
+    opacity: 0.5;
     text-align: center;
 }

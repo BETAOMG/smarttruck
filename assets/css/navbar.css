@@ -5,17 +5,16 @@
   --blanco:#fff;
   --fuente:'Quicksand', sans-serif;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
  }
+
  html{
   background-color: var(--azulOscuro);
  }
- 
-
-
 
  .container-logo{
    margin: auto;
@@ -24,16 +23,17 @@
    text-align: center;
  }
 
- 
-
 nav{
   height: 60px;
   background-color:#dfdfdf;
   text-align: center;
+  margin: 0 1rem 0 1rem;
+  border-radius: 10px;
 }
 
 .nav-bar-container{
   background-color: var(--azul);
+  border-radius: 10px;
 }
 
 nav ul{
@@ -59,8 +59,13 @@ nav ul li a:hover{
   background-color: #48d4ff;
 }
 
+.navbar-burger{
+  color: var(--blanco);
+}
+.navbar-burger span {
+  background-color: var(--azulOscuro);
+}
 
-
-
-
-
+a:hover{
+  color: var(--azulGris);
+}
