@@ -13,246 +13,378 @@
 </head>
 <body>
   
-    <div id="container-logo">
-        <img src="../assets/images/logo-dark.svg" alt="Smarttruck">
+  <div id="container-logo">
+    <img src="../assets/images/logo-dark.svg" alt="logo-smarttruck">
+  </div>
+
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">  
+      <div class="navbar-burger has-background-light" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-
-    <nav class="navbar is-transparent">
-        <div class="navbar-brand">
-          
-          <div class="navbar-burger has-background-light" data-target="navbarExampleTransparentExample">
-            <span></span>
-            <span></span>
-            <span></span>
+      
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="./inicio.html">
+          <img src="../assets/logo/home-logo.svg" alt="">
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">
+            Documentación
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="#">
+              Subir documentacion
+            </a>
           </div>
         </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link has-background-link-light">
+            Normativa
+          </a>
+        
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">
+              Marco normativo general
+            </a>
+            <a class="navbar-item" href="#">
+              Estructura empresarial
+            </a>
+            <a class="navbar-item" href="#">
+              Condiciones de equipo
+            </a>                      
+            <a class="navbar-item" href="#">
+              Relaciones económicas
+            </a>
+            <a class="navbar-item" href="#">
+              Normas de tránsito
+            </a>
+            <a class="navbar-item" href="#">
+              Transporte multimodal internacional
+            </a>
+            <a class="navbar-item" href="#">
+              Mercancías peligrosas
+            </a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link has-background-link-light" href="./vehiculos.html">
+            Vehículos
+          </a>
+        
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">
+              Gestionar vehículo
+            </a>
+            <a class="navbar-item" href="#">
+              Estado del vehículo
+            </a>
+          </div>
+        </div>
+
+        </div>
       
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="./inicio.html">
-                    Inicio
+          <div class="navbar-end">
+            
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">
+                Perfil
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="#">
+                  Ver perfil
                 </a>
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" href="#">
-                        Documentación
-                    </a>
-                    <div class="navbar-dropdown is-boxed">
-                        <a class="navbar-item" href="#">
-                            Subir documentacion
-                        </a>
-                    </div>
-                </div>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-background-link-light">
-                        Normativa
-                    </a>
-        
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="#">
-                            Marco normativo general
-                        </a>
-                        <a class="navbar-item" href="#">
-                            Estructura empresarial
-                        </a>
-                        <a class="navbar-item" href="#">
-                            Condiciones de equipo
-                        </a>                      
-                        <a class="navbar-item" href="#">
-                            Relaciones económicas
-                        </a>
-                        <a class="navbar-item" href="#">
-                            Normas de tránsito
-                        </a>
-                        <a class="navbar-item" href="#">
-                            Transporte multimodal internacional
-                        </a>
-                        <a class="navbar-item" href="#">
-                            Mercancías peligrosas
-                        </a>
-                    </div>
-                </div>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-background-link-light" href="./vehiculos.html">
-                        Vehículos
-                    </a>
-        
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="#">
-                            Gestionar vehículo
-                        </a>
-                        <a class="navbar-item" href="#">
-                            Estado del vehículo
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-      
-            <div class="navbar-end">
-            
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" href="#">
-                        Perfil
-                    </a>
-                    <div class="navbar-dropdown is-boxed">
-                        <a class="navbar-item" href="#">
-                            Ver perfil
-                        </a>
                   
-                        <hr class="navbar-divider">
+                <hr class="navbar-divider">
                   
-                        <a class="navbar-item is-active" href="#">
-                            Cerrar sesion
-                        </a>
-                    </div>
-                </div>
-            
-            </div>
-
-        </div>
-    </nav>
-     
-    <div class="container">
-        <form action="">
-            
-
-        <h1 class="title is-1 has-text-white">Legalizacion de viaje</h1>
-        
-
-        <div class="field">
-            <label for="fecha" class="label has-text-white">Fecha</label>
-            <div class="control">
-                <input type="datetime-local" id="fecha">
-            </div>
-
-            <label class="label has-text-white"># Viaje</label>
-            <div class="control">
-                <input class="input" type="number" placeholder="Número de viaje">
-            </div>
-
-            <label class="label has-text-white">Origen</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Lugar de origen">
-            </div>
-
-            <label class="label has-text-white">Conductor</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Nombre del conductor">
-            </div>
-
-            <label class="label has-text-white">Destino</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Lugar de destino">
-            </div>
-            
-            <label class="label has-text-white">Destino</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Lugar de destino">
-            </div>
-            
-            <label class="label has-text-white">Destino</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Lugar de destino">
-            </div>
-
-            <label class="label has-text-white">Destino</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Lugar de destino">
-            </div>
-
-            <label class="label has-text-white">Destino</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Lugar de destino">
-            </div>
-
-            <label class="label has-text-white">Destino</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Lugar de destino">
-            </div>
-
-          </div>
-          
-          <div class="field">
-            <label class="label">Username</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text" placeholder="Text input" value="bulma">
-              <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
-              </span>
-            </div>
-            <p class="help is-success">This username is available</p>
-          </div>
-          
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-exclamation-triangle"></i>
-              </span>
-            </div>
-            <p class="help is-danger">This email is invalid</p>
-          </div>
-          
-          <div class="field">
-            <label class="label">Subject</label>
-            <div class="control">
-              <div class="select">
-                <select>
-                  <option>Select dropdown</option>
-                  <option>With options</option>
-                </select>
+                <a class="navbar-item is-active" href="#">
+                  Cerrar sesion
+                </a>
               </div>
             </div>
+            
           </div>
-          
-          <div class="field">
-            <label class="label">Message</label>
+
+        </div>
+  </nav>
+     
+    <div class="container">
+      <form action="">
+            
+        <h1 class="title is-1 has-text-white">Legalizacion de viaje</h1>
+        
+        <div class="field">
+          <label for="fecha" class="label has-text-white">Fecha</label>
+          <div class="control">
+            <input type="datetime-local" id="fecha" required>
+          </div>
+
+          <label class="label has-text-white"># Viaje</label>
+          <div class="control">
+            <input class="input" type="number" placeholder="Número de viaje" required>
+          </div>
+
+          <label class="label has-text-white">Origen</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Lugar de origen" required>
+          </div>
+            
+          <label class="label has-text-white">Destino</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Lugar de destino" required>
+          </div>
+
+          <label class="label has-text-white">Placa</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Placa del vehículo" required>
+          </div>
+
+          <label class="label has-text-white">Conductor</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Nombre del conductor" required>
+          </div>
+
+          <label class="label has-text-white">Empresa</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Empresa" required>
+          </div>
+            
+          <label class="label has-text-white"># guia mmto</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="# guia mmto" required>
+          </div>
+
+            <!-- Galones tarifa -->
+            <!-- Tonelada tarifa -->
+
+            <label class="label has-text-white">Anticipo</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Textarea"></textarea>
+              <input class="input" type="text" placeholder="Lugar de destino">
+            </div>
+
+
+            <div class="field">
+
+              <h3 class="title is-3 has-text-white">Gastos de viaje</h3>
+
+              <label class="label has-text-white">Combustible</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="$ combustible">
+
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <img src="../assets/logo/upload-file.svg" alt="">
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+              
+              <label class="label has-text-white">Combustible</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="$ combustible">
+
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <img src="../assets/logo/upload-file.svg" alt="">
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="label has-text-white">Peajes</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="$ Peajes">
+
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <img src="../assets/logo/upload-file.svg" alt="">
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="label has-text-white">Parqueaderos</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="$ Parqueaderos">
+
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <img src="../assets/logo/upload-file.svg" alt="">
+                      </span>
+                    </span>
+                  </label>
+                </div>  
+              </div>
+
+              <label class="label has-text-white">Montajes</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="$ Montajes">
+
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <img src="../assets/logo/upload-file.svg" alt="">
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="label has-text-white">Lavado</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="$ Lavado">
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <img src="../assets/logo/upload-file.svg" alt="">
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="label has-text-white">Engrases</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="$ Engrases">
+
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <img src="../assets/logo/upload-file.svg" alt="">
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="label has-text-white">Repuestos</label>    
+              <div class="control">
+                <input class="input" type="number" placeholder="$ Repuestos">
+
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <img src="../assets/logo/upload-file.svg" alt="">
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="label has-text-white">Propina</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="$ Propina">
+
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <img src="../assets/logo/upload-file.svg" alt="">
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="label has-text-white">Cargue</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="$ Cargue">
+
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <img src="../assets/logo/upload-file.svg" alt="">
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="label has-text-white">Descargue</label>
+              <div class="control">
+                  <input class="input" type="number" placeholder="$ Descargue">
+
+                  <div class="file">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume">
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <img src="../assets/logo/upload-file.svg" alt="">
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+              </div>
+
+              <label class="label has-text-white">Otros</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="$ Otros">
+                  
+                
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <img src="../assets/logo/upload-file.svg" alt="">
+                      </span>
+                    </span>
+                  </label>
+                </div>
+
+              </div>
+
+            </div>
+
+          <div class="field">
+            <label class="label has-text-white">Observaciones</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Escriba aqui sus observaciones"></textarea>
             </div>
           </div>
-          
-          <div class="field">
-            <div class="control">
-              <label class="checkbox">
-                <input type="checkbox">
-                I agree to the <a href="#">terms and conditions</a>
-              </label>
-            </div>
-          </div>
-          
-          <div class="field">
-            <div class="control">
-              <label class="radio">
-                <input type="radio" name="question">
-                Yes
-              </label>
-              <label class="radio">
-                <input type="radio" name="question">
-                No
-              </label>
-            </div>
-          </div>
-          
+
           <div class="field is-grouped">
             <div class="control">
-              <button class="button is-link">Submit</button>
+              <input type="submit" class="button is-link"></input>
             </div>
             <div class="control">
-              <button class="button is-link is-light">Cancel</button>
+              <button class="button is-link is-light">Cancelar</button>
             </div>
           </div>
-        </form>
+      </form>
     </div>
+  </div>
 
     <footer>
         

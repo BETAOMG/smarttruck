@@ -19,8 +19,6 @@ footer{
     padding: 2rem 8%;
     background-color: rgba(25, 86, 155, 0.281);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -38,9 +36,10 @@ footer{
 }
 
 .social-icon{
-    height: 50px;
-    width: 50px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50px;
+    background-color: white;
     border: 1px solid whitesmoke;
     background-position: center;
     background-size: 90%;
@@ -49,7 +48,7 @@ footer{
 }
 
 .social-icon:hover{
- background-color: rgb(62, 116, 233);    
+ background-color: rgb(50, 115, 255);    
 }
 
 .social-icon:nth-of-type(1){
