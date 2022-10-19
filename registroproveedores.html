@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Truck - Mantenimiento</title>
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <title>Smart Truck - Proveedores</title>
     <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
+    <link rel="stylesheet" href="./assets/css/foot.css">
     <script src="./assets/javascript/nav-bar.js"></script>
+    <link rel="stylesheet" href="./assets/css/proveedores.css">
 </head>
-<body class="has-background-light">
+<body>
   
   <div class="container-logo">
     <img src="./assets/images/logo-dark.svg" alt="Smarttruck">
@@ -196,47 +198,118 @@
 
 
    </header>
-   <article class="panel is-link">
-    <p class="panel-heading">
-      Todo
-    </p>
-    <p class="panel-tabs">
-      <a  class="is-active" href="./mantenimiento.html">Todo</a>
-      <a href="./manpreventivo.html" >Preventivo</a>
-      <a href="./manproductivo.html">Productivo</a>
-      <a href="./mancorrectivo.html">Correctivo</a>
-    </p>
-    <div class="panel-block">
-      <p class="control has-icons-left">
-        <input class="input is-link" type="text" placeholder="Todo">
-        <span class="icon is-left">
-          <i class="fas fa-search" aria-hidden="true"></i>
-        </span>
-      </p>
+
+
+   <section class="contenedor-formulario contenedor">
+        
+    <div class="columns">
+        <div class="imagen-formulario"></div>
+        <div class="column is-full">
+            <h2 class="is-text-align-center title is-2 has-text-white">Registrar proveedor</h2>
+        </div>
     </div>
-    <a class="panel-block is-active">
-      <span class="panel-icon">
-        <i class="fas fa-book" aria-hidden="true"></i>
-      </span>
-      bulma
-    </a>
-    <a class="panel-block">
-      <span class="panel-icon">
-        <i class="fas fa-book" aria-hidden="true"></i>
-      </span>
-      marksheet
-    </a>
-    <a class="panel-block">
-      <span class="panel-icon">
-        <i class="fas fa-book" aria-hidden="true"></i>
-      </span>
-      minireset.css
-    </a>
-    <a class="panel-block">
-      <span class="panel-icon">
-        <i class="fas fa-book" aria-hidden="true"></i>
-      </span>
-      jgthms.github.io
-    </a>
-  </article>
+    <form action="">
+        <div class="columns">
+            <div class="column is-half">
+                <div class="field">
+                    <label class="label has-text-white">Nombre de la Empresa</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
+                    </div>
+                </div>
+      
+                <div class="field">
+                    <label class="label has-text-white">Nit de la empresa</label>
+                    <input class="input" type="text" placeholder="Nit de la empresa" title="apellido de usuario" required>
+                </div>
+
+                <div class="field">
+                    <label class="label has-text-white">Propietario de la empresa</label>
+                    <input class="input" type="text" placeholder="Propietario de la empresa" required>
+                </div>
+      
+                <div class="field">
+                    <label class="label has-text-white">Tipo de producto</label>
+                    <div class="control">
+                        <div class="select">
+                            <select title="selecciona tipo de carga">
+                                <option>Liquido</option>
+                                <option>Solido</option>
+                                <option>Ganado</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="field">
+                    <label class="label has-text-white">Numero de Telefono</label>
+                    <div class="control">
+                        <input class="input" type="number" placeholder="Numero de Telefono" required>
+                    </div>
+                </div>
+          
+                <div class="field">
+                    <label class="label has-text-white">Ciudad de ubicacion</label>
+                    <input class="input" type="text" placeholder="Ciudad de ubicacion" required>
+                </div>
+          
+                <div class="field">
+                    <label class="label has-text-white">Direccion</label>
+                    <input class="input" id="typepass" type="text" placeholder="Direccion" required>
+                    
+                </div>
+          
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox has-text-white">
+                        <input type="checkbox" required checked>
+                        Acepto
+                        <a href="#" class="has-text-info">
+                            terminos y condiciones
+                        </a>
+                        </label>
+                    </div>
+                </div>
+        
+                <div class="field is-grouped">
+                    <div class="control grouped">
+                        <a href="./proveedores.html"><button type="submit" class="button is-link">Registrar</button></a>
+                    </div>
+        
+                    <div class="control grouped">
+                      <a href="./proveedores.html"><button type="button" class="button is-link is-light">Cancelar</button></a>
+                    </div>
+                      
+                    <div class="control grouped">
+                        <input type="reset" class="button is-link is-light">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+  
+<footer>
+        
+  <div class="social-icon-container">
+      <a href="" class="social-icon"></a>
+      <a href="" class="social-icon"></a>
+      <a href="" class="social-icon"></a>
+      <a href="" class="social-icon"></a>
+  </div>
+  <ul class="footer-menu-container">
+      <li class="menu-item">Legal</li>
+      <li class="menu-item">Cookies</li>
+      <li class="menu-item">Privacy</li>
+      <li class="menu-item">Shipping</li>
+      <li class="menu-item">Refounds</li>
+  </ul>
+  <span class="copyright">&copy;2022,  Todos los derechos reservados <br> Desarrollado por: Clan ADSI_MC</span>
+</footer>
+  
+
 </body>
+</html>
