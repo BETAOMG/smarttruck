@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Truck - Proveedores</title>
+    <title>Smart Truck - Registrar Proveedor</title>
     <link rel="stylesheet" href="./assets/css/navbar.css">
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
@@ -40,7 +40,7 @@
               </a>
       
               <div class="navbar-dropdown">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="./usuarios.html">
                   Usuarios 
                 </a>
               
@@ -116,7 +116,7 @@
                   Transporte Multimodal Internacional
                 </a>
                 <a class="navbar-item">
-                  Mercancias Peligrosass
+                  Mercancias Peligrosas
                 </a>
               </div>
               </div>
@@ -205,208 +205,77 @@
     <div class="columns">
         <div class="imagen-formulario"></div>
         <div class="column is-full">
-            <h2 class="is-text-align-center title is-2 has-text-white">Proveedores</h2>
+            <h2 class="is-text-align-center title is-2 has-text-white">Modificar usuario</h2>
         </div>
     </div>
-    <div >
-
-
-   
-        
+    <form action="">
+        <div class="columns">
+            <div class="column is-half">
+                <div class="field">
+                    <label class="label has-text-white">Nombre</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Nombre del conductor" title="Nombre del conductor" required autofocus>
+                    </div>
+                </div>
       
-    
-      <div class="container">
-        <div class="table-flex">
-          <table class="table">
-            <div class="field is-grouped">
-              <p class="control is-expanded">
-                <input class="input" type="text" placeholder="Buscar Proveedor">
-              </p>
-               <a href="./registroproveedores.html"><img class="logo-agregar"  src="./assets/images/add.png" alt="10px"></a>
+                
+
+                
+
+                <div class="field">
+                    <label class="label has-text-white">Rol</label>
+                    <div class="control">
+                        <div class="select">
+                            <select title="selecciona tipo de vehículo">
+                                <option>Conductor</option>
+                                <option>Usuario</option>  
+                            </select>
+                        </div>
+                    </div>
+                </div>
+      
             </div>
-            <thead>
-              <tr>
-                <th><abbr title="id">id</abbr></th>
-                <th>Nit</th>
-                <th><abbr title="Conductor">Proveedor</abbr></th>
-                <th><abbr title="Estado">Estado</abbr></th>
-                <th><abbr title="Acciones" >
-                  
-                    
-              
-              </abbr></th>
-              </tr>
-            </thead>
-            
-            <tbody>
-              <tr>
-                <th>1</th>
-                <td>51545454</td>
-                <td>Carlos Julio Perez Mora</td>
-                <td>Activo</td>
-    
-                <td>
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-background-link-light"></a>
+
+            <div class="column is-half">
+                
+                <div class="field">
+                    <label class="label has-text-white">Documento</label>
+                    <div class="control">
+                        <input class="input" type="number" placeholder="Numero de documento" title="Número de documento" required>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label has-text-white">Estado</label>
+                    <div class="control">
+                        <div class="select">
+                            <select title="selecciona el estado de vehículo">
+                                <option>Activo</option>
+                                <option>Inactivo</option> 
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
           
-                    <div class="navbar-dropdown">
-                      <a class="navbar-item" href="./modificarprov.html"> 
-                        <img src="./assets/images/editar.png" alt="">
-                        Editar
-                      </a>
-                      <a class="navbar-item" href="./eliminarprov.html"> 
-                        <img src="./assets/images/eliminar.png" alt="">
-                        Eliminar
-                      </a>
-                    
-                    </div>
-                  </div>
-                </td>
                 
-                
-                </tr>
-                <tr>
-                <th>2</th>
-                <td>45456456456</td>
-                <td>Carlos Julio Perez Mora</td>
-                <td>Activo</td>
-    
-                <td>
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-background-link-light"></a>
-          
-                    <div class="navbar-dropdown">
-                      <a class="navbar-item" href="./modificarprov.html"> 
-                        <img src="./assets/images/editar.png" alt="">
-                        Editar
-                      </a>
-                      <a class="navbar-item"> 
-                        <img src="./assets/images/eliminar.png" alt="">
-                        Eliminar
-                      </a>
-                    
-                    </div>
-                  </div>
-                </td>
-                
-                
-                </tr>
-              <tr>
-                <th>3</th>
-                <td>5555454454</td>
-                <td>Carlos Julio Perez Mora</td>
-                <td>Activo</td>
-    
-                <td>
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-background-link-light"></a>
-          
-                    <div class="navbar-dropdown">
-                      <a class="navbar-item" href="./modificarprov.html"> 
-                        <img src="./assets/images/editar.png" alt="">
-                        Editar
-                      </a>
-                      <a class="navbar-item" href="./eliminarprov.html"> 
-                        <img src="./assets/images/eliminar.png" alt="">
-                        Eliminar
-                      </a>
-                    
-                    </div>
-                  </div>
-                </td>
-                
-                
-               
-              <tr>
-                <tr>
-                  <th>4</th>
-                  <td>5454215</td>
-                  <td>Carlos Julio Perez Mora</td>
-                  <td>Activo</td>
-      
-                  <td>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link has-background-link-light"></a>
-            
-                      <div class="navbar-dropdown">
-                        <a class="navbar-item" href="./modificarprov.html"> 
-                          <img src="./assets/images/editar.png" alt="">
-                          Editar
-                        </a>
-                        <a class="navbar-item" href="./eliminarprov.html"> 
-                          <img src="./assets/images/eliminar.png" alt="">
-                          Eliminar
-                        </a>
-                      
-                      </div>
-                    </div>
-                  </td>
-                  
-                  
-                 
-                <tr>
-                  <tr>
-                    <th>5</th>
-                    <td>4546546541</td>
-                    <td>Carlos Julio Perez Mora</td>
-                    <td>Activo</td>
         
-                    <td>
-                      <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link has-background-link-light"></a>
-              
-                        <div class="navbar-dropdown">
-                          <a class="navbar-item" href="./modificarprov.html"> 
-                            <img src="./assets/images/editar.png" alt="">
-                            Editar
-                          </a>
-                          <a class="navbar-item" href="./eliminarprov.html"> 
-                            <img src="./assets/images/eliminar.png" alt="">
-                            Eliminar
-                          </a>
-                        
-                        </div>
-                      </div>
-                    </td>
-                    
-                    
-                   
-                  <tr>
-                    <tr>
-                      <th>6</th>
-                      <td>44654654</td>
-                      <td>Carlos Julio Perez Mora</td>
-                      <td>Activo</td>
-          
-                      <td>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                          <a class="navbar-link has-background-link-light"></a>
-                
-                          <div class="navbar-dropdown">
-                            <a class="navbar-item" href="./modificarprov.html"> 
-                              <img src="./assets/images/editar.png" alt="">
-                              Editar
-                            </a>
-                            <a class="navbar-item" href="./eliminarprov.html"> 
-                              <img src="./assets/images/eliminar.png" alt="">
-                              Eliminar
-                            </a>
-                          
-                          </div>
-                        </div>
-                      </td>
+                <div class="field is-grouped">
+                    <div class="control grouped">
+                        <a href="./proveedores.html"><button type="submit" class="button is-link">Confirmar</button></a>
+                    </div>
+        
+                    <div class="control grouped">
+                      <a href="./proveedores.html"><button type="button" class="button is-link is-light">Cancelar</button></a>
+                    </div>
                       
-                      
-                     
-                    <tr>
-                
-            </tbody>
-          </table>
+                    <div class="control grouped">
+                        <input type="reset" class="button is-link is-light">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    
-    </div>
+    </form>
 </section>
 
   
