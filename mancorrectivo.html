@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
+    <link rel="stylesheet" href="./assets/css/mantenimiento.css">
+    <link rel="stylesheet" href="./assets/css/foot.css">
     <script src="./assets/javascript/nav-bar.js"></script>
 </head>
 <body class="has-background-light">
@@ -38,7 +40,7 @@
               </a>
       
               <div class="navbar-dropdown">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="./usuarios.html">
                   Usuarios 
                 </a>
               
@@ -60,13 +62,13 @@
               </a>
       
               <div class="navbar-dropdown">
-                <a class="navbar-item">
+                <a class="navbar-item" href="./manpreventivo.html">
                   Preventivo
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="./manproductivo.html">
                   Predictivo
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="./mancorrectivo.html">
                   Correctivo
                 </a>
                
@@ -90,7 +92,7 @@
               </div>
             </div> 
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link has-background-link-light">
+              <a class="navbar-link has-background-link-light" href="./normativa.html">
                 Normativas
               </a>
       
@@ -196,47 +198,104 @@
 
 
    </header>
-   <article class="panel is-link">
-    <p class="panel-heading">
-      Preventivo
-    </p>
-    <p class="panel-tabs">
-      <a  href="./mantenimiento.html">Todo</a>
-      <a href="./manpreventivo.html">Preventivo</a>
-      <a href="./manproductivo.html">Productivo</a>
-      <a  class="is-active">Correctivo</a>
-    </p>
-    <div class="panel-block">
-      <p class="control has-icons-left">
-        <input class="input is-link" type="text" placeholder="Buscar en Correctivo">
-        <span class="icon is-left">
-          <i class="fas fa-search" aria-hidden="true"></i>
-        </span>
-      </p>
+   
+   <div class="box">
+    <h2 class="is-text-align-center title is-2 has-text-white">Mantenimiento</h2>
+    <div class="sub-box">
+      <h2 class="is-text-align-center title is-2 has-text-white">Mantenimiento Correctivo</h2>
+      <a href="./manpreventivo.html"><img class="flecha" src="./assets/images/flecha.png" alt=""></a>
     </div>
-    <a class="panel-block is-active">
-      <span class="panel-icon">
-        <i class="fas fa-book" aria-hidden="true"></i>
-      </span>
-      bulma
-    </a>
-    <a class="panel-block">
-      <span class="panel-icon">
-        <i class="fas fa-book" aria-hidden="true"></i>
-      </span>
-      marksheet
-    </a>
-    <a class="panel-block">
-      <span class="panel-icon">
-        <i class="fas fa-book" aria-hidden="true"></i>
-      </span>
-      minireset.css
-    </a>
-    <a class="panel-block">
-      <span class="panel-icon">
-        <i class="fas fa-book" aria-hidden="true"></i>
-      </span>
-      jgthms.github.io
-    </a>
-  </article>
+    <br>
+    <div class="sub-box-form">
+      <form action="">
+        <div class="columns">
+            <div class="column is-half">
+                <div class="field">
+                    <label class="label has-text-white">Placa del vehiculo</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
+                    </div>
+                </div>
+                <div class="field">
+                  <label class="label has-text-white">fecha</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
+                  </div>
+              </div>
+              <div class="field">
+                <label class="label has-text-white">Mantenimiento</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
+                </div>
+            </div>
+            </div>
+         </div>
+        </form>
+        <div class="imagenes">
+          <img  class="imagen" src="./assets/images/image 13.svg" alt="">
+         
+          <div class="file">
+            <label class="file-label">
+              <input class="file-input" type="file" name="resume">
+              <span class="file-cta">
+                <span class="file-icon">
+                  <img src="./assets/logo/upload-file.svg" alt="">
+                </span>
+                <span class="file-label">
+                   Subir imagen
+                </span>
+              </span>
+            </label>
+          </div>
+        </div>
+    </div>
+    <br>
+    <input class="barra" type="search" placeholder="Buscar...">
+    <input type="submit" class="buscar">
+    <br>
+
+    <table class="default">
+
+      <tr>
+        <th>Placa</th>
+    
+        <th>Fecha</th>
+    
+        <th>Descripcion</th>
+    
+      </tr>
+    
+      <tr>
+    
+        <td>TLC 249</td>
+    
+        <td>23-10-2022</td>
+    
+        <td>Aliniamiento de ejes</td>
+    
+      </tr>
+
+    
+    </table>
+  </div>
+  <footer>
+        
+    <div class="social-icon-container">
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+    </div>
+    <ul class="footer-menu-container">
+        <li class="menu-item">Legal</li>
+        <li class="menu-item">Cookies</li>
+        <li class="menu-item">Privacy</li>
+        <li class="menu-item">Shipping</li>
+        <li class="menu-item">Refounds</li>
+    </ul>
+    <span class="copyright">&copy;2022,  Todos los derechos reservados <br> Desarrollado por: Clan ADSI_MC</span>
+  </footer>
+
+
+
 </body>

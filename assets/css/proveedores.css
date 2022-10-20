@@ -114,6 +114,12 @@ body{
     width: 42rem;
   }
 
+
+  .logo-agregar-carpeta{
+    width: 50ox;
+    height: 50px;
+  }
+
 .container-center{
     display: flex;
     flex-direction: column;
