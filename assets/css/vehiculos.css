@@ -6,15 +6,27 @@
   --fuente:'Quicksand', sans-serif;
 }
 
+*{
+  transition: 0.6s;
+}
+
 html{
   background-color: var(--azulOscuro)
 }
 
+.contenedor{
+  background-color: var(--azul);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    width: 80%;
+    border-radius: 10px;
+}
 
 .titulo{
   display: flex;
   justify-content: center;
-  margin: 2rem 0 1rem 0;
+  margin-bottom: 2rem;
 }
 
 .title-item{

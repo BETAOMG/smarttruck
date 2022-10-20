@@ -205,61 +205,64 @@
     <div class="columns">
         <div class="imagen-formulario"></div>
         <div class="column is-full">
-            <h2 class="is-text-align-center title is-2 has-text-white">Registrar proveedor</h2>
+            <h2 class="is-text-align-center title is-2 has-text-white">Registrar vehículo</h2>
         </div>
     </div>
     <form action="">
         <div class="columns">
             <div class="column is-half">
                 <div class="field">
-                    <label class="label has-text-white">Nombre de la Empresa</label>
+                    <label class="label has-text-white">Placa</label>
                     <div class="control">
-                      <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
+                      <input class="input" type="text" placeholder="Placa del vehiculo" title="Placa del vehiculo" required autofocus>
                     </div>
                 </div>
       
                 <div class="field">
-                    <label class="label has-text-white">Nit de la empresa</label>
-                    <input class="input" type="text" placeholder="Nit de la empresa" title="apellido de usuario" required>
+                    <label class="label has-text-white">ID conductor</label>
+                    <input class="input" type="number" placeholder="Id del conductor" title="Id del conductor" required>
                 </div>
 
+                
+
                 <div class="field">
-                    <label class="label has-text-white">Propietario de la empresa</label>
-                    <input class="input" type="text" placeholder="Propietario de la empresa" required>
-                </div>
-      
-                <div class="field">
-                    <label class="label has-text-white">Tipo de producto</label>
+                    <label class="label has-text-white">Tipo de vehículo</label>
                     <div class="control">
                         <div class="select">
-                            <select title="selecciona tipo de carga">
-                                <option>Liquido</option>
-                                <option>Solido</option>
-                                <option>Ganado</option>
+                            <select title="selecciona tipo de vehículo">
+                                <option>Volqueta</option>
+                                <option>Camión</option> 
+                                <option>Tractocamión</option> 
                             </select>
                         </div>
                     </div>
                 </div>
+      
             </div>
 
             <div class="column is-half">
+                
                 <div class="field">
-                    <label class="label has-text-white">Numero de Telefono</label>
+                    <label class="label has-text-white">Numero de ejes</label>
                     <div class="control">
-                        <input class="input" type="number" placeholder="Numero de Telefono" required>
+                        <input class="input" type="number" placeholder="Numero de ejes" title="Número de ejes" required>
                     </div>
                 </div>
-          
+                
                 <div class="field">
-                    <label class="label has-text-white">Ciudad de ubicacion</label>
-                    <input class="input" type="text" placeholder="Ciudad de ubicacion" required>
+                    <label class="label has-text-white">Estado</label>
+                    <div class="control">
+                        <div class="select">
+                            <select title="selecciona el estado de vehículo">
+                                <option>Activo</option>
+                                <option>Inactivo</option> 
+                            </select>
+                        </div>
+                    </div>
                 </div>
+
           
-                <div class="field">
-                    <label class="label has-text-white">Direccion</label>
-                    <input class="input" id="typepass" type="text" placeholder="Direccion" required>
-                    
-                </div>
+                
         
                 <div class="field is-grouped">
                     <div class="control grouped">
