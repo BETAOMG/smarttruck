@@ -16,64 +16,56 @@
         <img src="./assets/images/logo.svg" alt="logo">
         
      </div>
-     <nav class="navbar nav-bar-container " role="navigation" aria-label="main navigation" >
-      <div class="container nav-bar-container"> 
-          <div class="navbar-brand">
-              <a class="navbar-item" href="./Inicio.html">
-                <img src="./assets/images/logo-dark.svg" width="100rem" >
-              </a>
-          
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-          
-            <div id="navbarBasicExample" class="navbar-menu ">
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link has-background-link-light">
-                Usuarios
-                </a>
-        
-                <div class="navbar-dropdown">
-                  <a class="navbar-item" href="./proveedores.html">
-                    Gestionar usuarios
-                  </a>
-                  
-                 
-                </div>
-              </div>
+     <nav class="navbar nav-bar-container" role="navigation" aria-label="main navigation" >
+
+      <div class="navbar-brand">  
+        <div class="navbar-burger has-background-light" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu ">
+          <a class="navbar-item" href="./Inicio.html">
+            <img src="./assets/logo/home-logo.svg" width="" >
+          </a>
+              
 
               <div class="navbar-start">
                 <div class="navbar-item has-dropdown is-hoverable">
                   <a class="navbar-link has-background-link-light">
-                  Proveedores
+                  Gestionar
                   </a>
           
                   <div class="navbar-dropdown">
+                    <a class="navbar-item" href="./usuarios.html">
+                      Usuarios 
+                    </a>
+                  
+                  
                     <a class="navbar-item" href="./proveedores.html">
-                      Gestionar proveedores
+                      Proveedores 
+                    </a>
+                  
+                  
+                    <a class="navbar-item" href="./vehiculos.html">
+                      Vehiculos 
                     </a>
                   </div>
+                  
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link has-background-link-light" href="./mantenimiento.html">
+                  <a class="navbar-link has-background-link-light">
                     Mantenimiento
                   </a>
-          
+                  
                   <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                      Preventivo
+                    <a class="navbar-item" href="./mantenimiento.html">
+                      Gestionar mantenimiento
                     </a>
-                    <a class="navbar-item">
-                      Predictivo
-                    </a>
-                    <a class="navbar-item">
-                      Correctivo
-                    </a>
-                   
                   </div>
+                  
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
                   <a class="navbar-link has-background-link-light">
@@ -81,19 +73,13 @@
                   </a>
               
                   <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                      Soportes contables
-                    </a>
-                    <a class="navbar-item">
-                      Documentos comerciales
-                    </a>
-                    <a class="navbar-item">
-                      Documentacion de transporte
-                    </a>                     
+                    <a class="navbar-item" href="./documentacion.html">
+                      Gestionar documentacion
+                    </a>                    
                   </div>
                 </div> 
                 <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link has-background-link-light">
+                  <a class="navbar-link has-background-link-light" href="./normativa.html">
                     Normativas
                   </a>
           
@@ -121,20 +107,7 @@
                     </a>
                   </div>
                   </div>
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-background-link-light" href="./vehiculos.html">
-                      Vehiculos
-                    </a>
-            
-                    <div class="navbar-dropdown">
-                      <a class="navbar-item">
-                        Gestionar vehiculo
-                      </a>
-                      <a class="navbar-item">
-                        Estado del vehiculo
-                      </a>
-                    </div>
-                  </div>
+                  
                   <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link has-background-link-light">
                       Rutas
@@ -148,47 +121,45 @@
                         Peaje
                       </a>
                       <a class="navbar-item">
-                        Gastos de viaje
-                      </a>
-                      <a class="navbar-item">
                         Cierre vial
                       </a>
+                     
                     </div>
                   </div>
+                  
                   <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link has-background-link-light">
                       Atencion al cliente
                     </a>
             
                     <div class="navbar-dropdown">
-                      <a class="navbar-item">
-                        Preguntas
-                      </a>
-                      <a class="navbar-item">
-                        Reclamos
-                      </a>
-                      <a class="navbar-item">
-                        Sugerencias
+                      <a class="navbar-item" href="./atencionalcliente.html">
+                        Preguntas,  reclamos, sugerencias
                       </a>
                     </div>
                   </div>                              
               </div>           
               <div class="navbar-end">
-                <div class="navbar-item">
-                  <div class="buttons" >
-                    <a class="button is-info " href="./Registro.html">
-                      <strong>Regitrarse</strong>
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link" href="#">
+                   <img class="logo-perfil" src="./assets/logo/github-logo.svg" alt="" >
+                  </a>
+                  <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="#">
+                      Ver perfil
                     </a>
-                    <a class="hsl(212,72,26)">
-                      Iniciar sesion
+                      
+                    <hr class="navbar-divider">
+                      
+                    <a class="navbar-item is-active" href="./inicio-sesion.html">
+                      Cerrar sesion
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-      </div>
 
-    </nav>
+      </nav>
 
 
    </header>
