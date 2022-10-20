@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 0.5s;
  }
 
  html{
@@ -18,7 +19,6 @@
 
  .container-logo{
    margin: auto;
-   height: 250px;
    width: 320px;
    text-align: center;
  }
@@ -32,7 +32,6 @@ nav{
 }
 
 .nav-bar-container{
-  background-color: var(--azul);
   border-radius: 10px;
 }
 
@@ -68,4 +67,25 @@ nav ul li a:hover{
 
 a:hover{
   color: var(--azulGris);
+}
+
+
+
+.navbar-link{
+  border-radius: 10px;
+  background-color: var(--blanco);
+}
+
+.navbar-link:hover{
+  color: rgb(0, 0, 0);
+}
+
+
+
+.logo-perfil{
+  width: 5rem;
+}
+
+.navbar-item {
+  color: black;
 }

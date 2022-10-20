@@ -105,3 +105,18 @@ body{
         margin-bottom: 1rem !important;
     }
 }
+.logo-agregar{
+    width: 50ox;
+    height: 50px;
+  }
+
+  .table{
+    width: 42rem;
+  }
+
+.container-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

@@ -1,9 +1,42 @@
-.a {
-    float: left;
-    padding: 10px;
-  }
-  .a div{
-    height: 100px;
-    width: 100px; 
-    background-color: #2980B9;
-  }
+:root{
+  --azul:#134074;
+  --azulOscuro:#0B2545;
+  --azulGris:#8DA9C4;
+  --blanco:#fff;
+  --fuente:'Quicksand', sans-serif;
+}
+
+html{
+  background-color: var(--azulOscuro)
+}
+
+
+.titulo{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.title-item{
+  border-radius: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.logo-agregar{
+  width: 50ox;
+  height: 50px;
+}
+
+
+.container{
+  
+  display: flex;
+  justify-content: center;
+}
+
+.table{
+  
+  background-color: var(--azulGris) ;
+}
+
+
