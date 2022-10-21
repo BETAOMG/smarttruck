@@ -25,23 +25,18 @@ body{
 
 .contenedor{
     background-color: var(--azul);
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2rem auto;
     padding: 2rem;
-    max-width: 800px;
-    width: 80%;
+    max-width: 50rem;
     border-radius: 10px;
 }
 
-
-
-
-@media(min-width:768px){
-    body{
-        display: flex;
-        align-content: center;
-    }
-    
-
+abbr{
+    text-decoration: none;
 }
 
 
@@ -106,13 +101,11 @@ body{
     }
 }
 .logo-agregar{
-    width: 50ox;
-    height: 50px;
+    width: 2.5rem;
+    
   }
 
-  .table{
-    width: 42rem;
-  }
+ 
 
 
   .logo-agregar-carpeta{
