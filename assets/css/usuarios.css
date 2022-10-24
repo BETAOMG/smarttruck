@@ -25,7 +25,7 @@ html{
     border-radius: 10px;
 }
 
-.container{
+.container, .field.is-grouped{
     display: flex;
     justify-content: center;
 }

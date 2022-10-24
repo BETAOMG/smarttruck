@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Truck - Proveedores</title>
+    <title>Smart Truck - Usuarios</title>
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
     <link rel="stylesheet" href="./assets/css/foot.css">
-    <script src="./assets/javascript/nav-bar.js"></script>
     <link rel="stylesheet" href="./assets/css/usuarios.css">
+    <script src="./assets/javascript/nav-bar.js"></script>
+    <script src="./assets/javascript/modal.js"></script>
 </head>
 <body>
   
@@ -209,14 +210,18 @@
                     <a class="navbar-link has-background-link-light"></a>
           
                     <div class="navbar-dropdown">
-                      <a class="navbar-item" href="./editarusuario.html"> 
-                        <img src="./assets/images/editar.png" alt="">
-                        Editar
-                      </a>
-                      <a class="navbar-item" href="./eliminarusuario.html"> 
-                        <img src="./assets/images/eliminar.png" alt="">
-                        Eliminar
-                      </a>
+                     
+                        <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                          <img src="./assets/images/editar.png" alt="">
+                          Editar
+                        </button>
+                        
+                        <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                          <img src="./assets/images/eliminar.png" alt="">
+                          Eliminar
+                        </button>
+                      
+                        
                     
                     </div>
                   </div>
@@ -346,7 +351,7 @@
                               <img src="./assets/images/editar.png" alt="">
                               Editar
                             </a>
-                            <a class="navbar-item" href="./eliminarusuario.html"> 
+                            <a class="navbar-item" href="./eliminarusuario.html">
                               <img src="./assets/images/eliminar.png" alt="">
                               Eliminar
                             </a>
@@ -355,8 +360,6 @@
                         </div>
                       </td>
                       
-                      
-                     
                     <tr>
                 
             </tbody>
@@ -366,6 +369,112 @@
     
     
     </div>
+</section>
+
+<section class="modals">
+  <!-- Aqui van los modales -->
+
+  <div id="modal-edit" class="modal is-clipped">
+    <div class="modal-background"></div>
+    <div class="modal-content" style="max-height: none;">
+      <div class="">
+  
+        <section class="contenedor-formulario contenedor">
+      
+          <div class="columns">
+              <div class="imagen-formulario"></div>
+              <div class="column is-full">
+                  <h2 class="is-text-align-center title is-2 has-text-white">Modificar usuario</h2>
+              </div>
+          </div>
+          <form action="">
+              <div class="columns">
+                  <div class="column is-half">
+                      <div class="field">
+                          <label class="label has-text-white">Nombre</label>
+                          <div class="control">
+                            <input class="input" type="text" placeholder="Nombre del conductor" title="Nombre del conductor" required autofocus>
+                          </div>
+                      </div>
+            
+                      
+      
+                      
+      
+                      <div class="field">
+                          <label class="label has-text-white">Rol</label>
+                          <div class="control">
+                              <div class="select">
+                                  <select title="selecciona tipo de vehículo">
+                                      <option>Conductor</option>
+                                      <option>Usuario</option>  
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+            
+                  </div>
+      
+                  <div class="column is-half">
+                      
+                      <div class="field">
+                          <label class="label has-text-white">Documento</label>
+                          <div class="control">
+                              <input class="input" type="number" placeholder="Numero de documento" title="Número de documento" required>
+                          </div>
+                      </div>
+                      
+                      <div class="field">
+                          <label class="label has-text-white">Estado</label>
+                          <div class="control">
+                              <div class="select">
+                                  <select title="selecciona el estado de vehículo">
+                                      <option>Activo</option>
+                                      <option>Inactivo</option> 
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="field is-grouped">
+                <div class="control grouped">
+                    <a href="">
+                      <button type="submit" class="button is-link">
+                        Confirmar
+                      </button>
+                    </a>
+                </div>
+    
+                <div class="control grouped">
+                  <a href="./usuarios.html"><button type="button" class="button is-link is-light">Cancelar</button></a>
+                </div>
+                  
+                <div class="control grouped">
+                    <input type="reset" class="button is-link is-light">
+                </div>
+            </div>
+          </form>
+      </section>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-delete" class="modal">
+    <div class="modal-background"></div>
+  
+    <div class="modal-content">
+      <div class="box">
+        <p>Modal JS example</p>
+        <!-- Your content -->
+      </div>
+    </div>
+  
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+
 </section>
 
   
@@ -386,7 +495,5 @@
   </ul>
   <span class="copyright">&copy;2022,  Todos los derechos reservados <br> Desarrollado por: Clan ADSI_MC</span>
 </footer>
-  
-
 </body>
 </html>
