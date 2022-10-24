@@ -20,8 +20,8 @@ html{
     background-color: var(--azul);
     margin: 2rem auto;
     padding: 2rem;
-    max-width: 800px;
-    width: 80%;
+    max-width: 30rem;
+    width: max-content;
     border-radius: 10px;
 }
 
