@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Truck - Proveedores</title>
-    <link rel="stylesheet" href="./assets/css/navbar.css">
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
     <link rel="stylesheet" href="./assets/css/foot.css">
-    <script src="./assets/javascript/nav-bar.js"></script>
     <link rel="stylesheet" href="./assets/css/proveedores.css">
+    <script src="./assets/javascript/nav-bar.js"></script>
+    <script src="./assets/javascript/modal.js"></script>
 </head>
 <body>
   
@@ -20,7 +21,7 @@
  <nav class="navbar nav-bar-container" role="navigation" aria-label="main navigation" >
 
   <div class="navbar-brand">  
-    <div class="navbar-burger has-background-light" data-target="navbarExampleTransparentExample">
+    <div class="navbar-burger" data-target="navbarExampleTransparentExample">
       <span></span>
       <span></span>
       <span></span>
@@ -163,214 +164,287 @@
   </nav>
 
 
-   </header>
+  </header>
 
+  <main>
 
-   <section class="contenedor">
-        
-    <div class="columns">
-        <div class="imagen-formulario"></div>
-        <div class="column is-full">
-            <h2 class="is-text-align-center title is-2 has-text-white">Proveedores</h2>
-        </div>
-    </div>
-    <div >
-
-
-   
-        
-      
-    
-      <div class="container">
-        <div class="table-flex">
-          <table class="table">
-            <div class="field is-grouped">
-              <p class="control is-expanded">
-                <input class="input" type="text" placeholder="Buscar">
-              </p>
-               <a href="./registroproveedores.html"><img class="logo-agregar"  src="./assets/images/add.png" alt="10px"></a>
-            </div>
-            <thead>
-              <tr>
-                <th><abbr title="id">id</abbr></th>
-                <th>Nit</th>
-                <th><abbr title="Conductor">Proveedor</abbr></th>
-                <th><abbr title="Estado">Estado</abbr></th>
-                <th><abbr title="Acciones">
-              </abbr></th>
-              </tr>
-            </thead>
-            
-            <tbody>
-              <tr>
-                <th>1</th>
-                <td>51545454</td>
-                <td>Carlos Julio Perez Mora</td>
-                <td>Activo</td>
-    
-                <td>
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-background-link-light"></a>
-          
-                    <div class="navbar-dropdown">
-                      <a class="navbar-item" href="./modificarprov.html"> 
-                        <img src="./assets/images/editar.png" alt="">
-                        Editar
-                      </a>
-                      <a class="navbar-item" href="./eliminarprov.html"> 
-                        <img src="./assets/images/eliminar.png" alt="">
-                        Eliminar
-                      </a>
-                    
-                    </div>
-                  </div>
-                </td>
-                
-                
-                </tr>
-                <tr>
-                <th>2</th>
-                <td>45456456456</td>
-                <td>Carlos Julio Perez Mora</td>
-                <td>Activo</td>
-    
-                <td>
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-background-link-light"></a>
-          
-                    <div class="navbar-dropdown">
-                      <a class="navbar-item" href="./modificarprov.html"> 
-                        <img src="./assets/images/editar.png" alt="">
-                        Editar
-                      </a>
-                      <a class="navbar-item" href="./eliminarprov.html"> 
-                        <img src="./assets/images/eliminar.png" alt="">
-                        Eliminar
-                      </a>
-                    
-                    </div>
-                  </div>
-                </td>
-                
-                
-                </tr>
-              <tr>
-                <th>3</th>
-                <td>5555454454</td>
-                <td>Carlos Julio Perez Mora</td>
-                <td>Activo</td>
-    
-                <td>
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-background-link-light"></a>
-          
-                    <div class="navbar-dropdown">
-                      <a class="navbar-item" href="./modificarprov.html"> 
-                        <img src="./assets/images/editar.png" alt="">
-                        Editar
-                      </a>
-                      <a class="navbar-item" href="./eliminarprov.html"> 
-                        <img src="./assets/images/eliminar.png" alt="">
-                        Eliminar
-                      </a>
-                    
-                    </div>
-                  </div>
-                </td>
-                
-                
-               
-              <tr>
-                <tr>
-                  <th>4</th>
-                  <td>5454215</td>
-                  <td>Carlos Julio Perez Mora</td>
-                  <td>Activo</td>
-      
-                  <td>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link has-background-link-light"></a>
-            
-                      <div class="navbar-dropdown">
-                        <a class="navbar-item" href="./modificarprov.html"> 
-                          <img src="./assets/images/editar.png" alt="">
-                          Editar
-                        </a>
-                        <a class="navbar-item" href="./eliminarprov.html"> 
-                          <img src="./assets/images/eliminar.png" alt="">
-                          Eliminar
-                        </a>
-                      
-                      </div>
-                    </div>
-                  </td>
-                  
-                  
+    <section class="container-main">
+      <h2 class="is-text-align-center title is-2 has-text-white">Proveedores</h2>
+      <div >
+ 
+       <div class="container">
+         <div class="table-flex">
+           <table class="table">
+             <div class="field is-grouped">
+               <p class="control is-expanded">
+                 <input class="input" type="text" placeholder="Buscar">
+               </p>
+                <a href="./registroproveedores.html"><img class="logo-add"  src="./assets/images/add.png" alt="Agregar proveedor"></a>
+             </div>
+             <thead>
+               <tr>
+                 <th><abbr>id</abbr></th>
+                 <th>Nit</th>
+                 <th><abbr>Proveedor</abbr></th>
+                 <th><abbr>Estado</abbr></th>
+                 <th><abbr>
+               </abbr></th>
+               </tr>
+             </thead>
+             
+             <tbody>
+               <tr>
+                 <th>1</th>
+                 <td>51545454</td>
+                 <td>Carlos Julio Perez Mora</td>
+                 <td>Activo</td>
+     
+                 <td>
+                   <div class="navbar-item has-dropdown is-hoverable">
+                     <a class="navbar-link"></a>
+                     <div class="navbar-dropdown">
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                         <img src="./assets/images/editar.png" alt="">
+                           Editar
+                       </button>
+                           
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                         <img src="./assets/images/eliminar.png" alt="">
+                           Eliminar
+                       </button>
+                     </div>
+                   </div>
+                 </td>
                  
+                 
+                </tr>
                 <tr>
-                  <tr>
-                    <th>5</th>
-                    <td>4546546541</td>
-                    <td>Carlos Julio Perez Mora</td>
-                    <td>Activo</td>
-        
-                    <td>
-                      <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link has-background-link-light"></a>
-              
-                        <div class="navbar-dropdown">
-                          <a class="navbar-item" href="./modificarprov.html"> 
-                            <img src="./assets/images/editar.png" alt="">
-                            Editar
-                          </a>
-                          <a class="navbar-item" href="./eliminarprov.html"> 
-                            <img src="./assets/images/eliminar.png" alt="">
-                            Eliminar
-                          </a>
-                        
-                        </div>
-                      </div>
-                    </td>
-                    
-                    
+                 <th>2</th>
+                 <td>45456456456</td>
+                 <td>Carlos Julio Perez Mora</td>
+                 <td>Activo</td>
+     
+                 <td>
+                   <div class="navbar-item has-dropdown is-hoverable">
+                     <a class="navbar-link"></a>
+                     <div class="navbar-dropdown">
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                         <img src="./assets/images/editar.png" alt="">
+                           Editar
+                       </button>
+                           
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                         <img src="./assets/images/eliminar.png" alt="">
+                           Eliminar
+                       </button>
+                     </div>
+                   </div>
+                 </td>
+                 
+                 
+                </tr>
+               <tr>
+                 <th>3</th>
+                 <td>5555454454</td>
+                 <td>Carlos Julio Perez Mora</td>
+                 <td>Activo</td>
+     
+                 <td>
+                   <div class="navbar-item has-dropdown is-hoverable">
+                     <a class="navbar-link"></a>
+                     <div class="navbar-dropdown">
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                         <img src="./assets/images/editar.png" alt="">
+                           Editar
+                       </button>
+                           
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                         <img src="./assets/images/eliminar.png" alt="">
+                           Eliminar
+                       </button>
+                     </div>
+                   </div>
+                 </td>
+               </tr>
+                 
+                
+                <tr>
+                   <th>4</th>
+                   <td>5454215</td>
+                   <td>Carlos Julio Perez Mora</td>
+                   <td>Activo</td>
+                   <td>
+                     <div class="navbar-item has-dropdown is-hoverable">
+                       <a class="navbar-link"></a>
+                       <div class="navbar-dropdown">
+                         <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                           <img src="./assets/images/editar.png" alt="">
+                             Editar
+                         </button>
+                             
+                         <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                           <img src="./assets/images/eliminar.png" alt="">
+                             Eliminar
+                         </button>
+                       </div>
+                     </div>
+                   </td>
+                  </tr>
+
+                    <tr>
                    
-                  <tr>
+                     <th>5</th>
+                     <td>4546546541</td>
+                     <td>Carlos Julio Perez Mora</td>
+                     <td>Activo</td>
+         
+                     <td>
+                       <div class="navbar-item has-dropdown is-hoverable">
+                         <a class="navbar-link"></a>
+                         <div class="navbar-dropdown">
+                           <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                             <img src="./assets/images/editar.png" alt="">
+                               Editar
+                           </button>
+                               
+                           <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                             <img src="./assets/images/eliminar.png" alt="">
+                               Eliminar
+                           </button>
+                         </div>
+                       </div>
+                     </td>
+                    </tr>
+
                     <tr>
-                      <th>6</th>
-                      <td>44654654</td>
-                      <td>Carlos Julio Perez Mora</td>
-                      <td>Activo</td>
-          
-                      <td>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                          <a class="navbar-link has-background-link-light"></a>
-                
-                          <div class="navbar-dropdown">
-                            <a class="navbar-item" href="./modificarprov.html"> 
-                              <img src="./assets/images/editar.png" alt="">
-                              Editar
-                            </a>
-                            <a class="navbar-item" href="./eliminarprov.html"> 
-                              <img src="./assets/images/eliminar.png" alt="">
-                              Eliminar
-                            </a>
-                          
-                          </div>
-                        </div>
-                      </td>
-                      
-                      
+                       <th>6</th>
+                       <td>44654654</td>
+                       <td>Carlos Julio Perez Mora</td>
+                       <td>Activo</td>
+           
+                       <td>
+                         <div class="navbar-item has-dropdown is-hoverable">
+                           <a class="navbar-link"></a>
+                           <div class="navbar-dropdown">
+                             <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                               <img src="./assets/images/editar.png" alt="">
+                                 Editar
+                             </button>
+                                 
+                             <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                               <img src="./assets/images/eliminar.png" alt="">
+                                 Eliminar
+                             </button>
+                           </div>
+                         </div>
+                       </td>
+ 
+                    </tr>                
+             </tbody>
+           </table>
+         </div>
+     </div>
+     
+     
+     </div>
+    </section>
+ 
+    <section class="modals">
+ 
+   <div id="modal-edit" class="modal is-clipped">
+     <div class="modal-background"></div>
+     <div class="modal-content" style="max-height: none;">
+       
+       <div class="container-form">
+       
+         <h2 class="title is-2 has-text-white is-text-align-center">Modificar Proveedor</h2>
+         <form action="">
+           <div class="columns">
+               <div class="column is-half">
+                   <div class="field">
+                       <label class="label has-text-white">Nombre de la Empresa</label>
+                       <div class="control">
+                         <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
+                       </div>
+                   </div>
+         
+                   <div class="field">
+                       <label class="label has-text-white">Nit de la empresa</label>
+                       <input class="input" type="text" placeholder="Nit de la empresa" title="apellido de usuario" required>
+                   </div>
+   
+                   <div class="field">
+                       <label class="label has-text-white">Propietario de la empresa</label>
+                       <input class="input" type="text" placeholder="Propietario de la empresa" required>
+                   </div>
+         
+                   
+               </div>
+   
+               <div class="column is-half">
+                   <div class="field">
+                       <label class="label has-text-white">Numero de Telefono</label>
+                       <div class="control">
+                           <input class="input" type="number" placeholder="Numero de Telefono" required>
+                       </div>
+                   </div>
+             
+                   <div class="field">
+                       <label class="label has-text-white">Ciudad de ubicacion</label>
+                       <input class="input" type="text" placeholder="Ciudad de ubicacion" required>
+                   </div>
+             
+                   <div class="field">
+                       <label class="label has-text-white">Direccion</label>
+                       <input class="input" id="typepass" type="text" placeholder="Direccion" required>
+                       
+                   </div>
+   
+                 </div>
+               </div>
+               <div class="field is-grouped is-text-align-center">
+                   <div class="control grouped">
+                       <button type="submit" class="button is-link">Modificar</button>
+                   </div>
+       
+                   <div class="control grouped">
+                       <button type="button" class="button is-link is-light">Cancelar</button>
+                   </div>
                      
-                    <tr>
-                
-            </tbody>
-          </table>
-        </div>
-    </div>
-    
-    
-    </div>
-</section>
+                   <div class="control grouped">
+                       <input type="reset" class="button is-link is-light">
+                   </div>
+               </div>
+       </form>
+     </div>
+     
+   </div>
+ </div>
+ 
+ <div id="modal-delete" class="modal">
+   <div class="modal-background"></div>
+ 
+   <div class="modal-content">
+     <div class="container notification container-center">
+       <h1 class="title is-1 has-text-danger">Esta seguro que quiere eliminar este proveedor?</h1>
+       <div class="field is-grouped is-flex is-justify-content-center">
+         <div class="control">
+           <button class="button is-light">Si</button>
+         </div>
+         <div class="control">
+           <button class="button is-link is-danger">No</button>
+         </div>
+         
+       </div>
+         
+       </div>
+   </div>
+ </div>
+ 
+    </section>
+
+
+  </main>
 
   
 <footer>

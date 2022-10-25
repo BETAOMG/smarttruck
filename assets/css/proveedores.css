@@ -23,7 +23,7 @@ body{
 }
 
 
-.contenedor{
+.container-main{
     background-color: var(--azul);
     display: flex;
     flex-direction: column;
@@ -34,87 +34,28 @@ body{
     border-radius: 10px;
 }
 
-abbr{
-    text-decoration: none;
-}
 
 
-@media(min-width:768px){
-    
-.formulario{
-    padding: 50px;
-    width: 100%;
+.field.is-grouped{
+    justify-content: center;
 }
 
-.texto-formulario h2, .input label, .password-olvidada a, .texto-formulario p{
-    color: var(--blanco);
-}
-.texto-formulario h2{
-    font-size: 40px;
-    text-align: center;
-}
-.texto-formulario p{
-    font-size: 22px;
-    text-align: center;
-}
-.input label{
-    display: block;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 20px 0;
-}
-.password-olvidada a{
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 22px;
-}
-.input input{
-    width: 100%;
-    padding: 10px 16px;
-    border-radius: 5px;
-    outline: none;
-}
-.input input[type="submit"]{
-    background-color: var(--azulGris);
-    color: var(--blanco);
-    font-size: 22px;
-    font-weight: bold;
-    border: none;
-    margin-top: 20px;
-    transition: background-color .3s ease-in-out;
-}
-.input input[type="submit"]:hover{
-    cursor: pointer;
-    background-color: var(--azulOscuro);
+.container-form{
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: var(--azul);
 }
 
+.button{
+    border-color: rgba(255, 255, 255, 0);
 }
 
-@media(max-width:977px){
-    .is-grouped{
-        flex-direction: column;
-        
-    }
-    div.control.grouped{
-        margin-bottom: 1rem !important;
+@media (max-width: 510px) {
+    .container-main{
+        width: fit-content;
     }
 }
-.logo-agregar{
+
+.logo-add{
     width: 2.5rem;
-    
-  }
-
- 
-
-
-  .logo-agregar-carpeta{
-    width: 50ox;
-    height: 50px;
-  }
-
-.container-center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }

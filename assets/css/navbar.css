@@ -59,6 +59,7 @@ nav ul li a:hover{
 
 .navbar-burger{
   color: var(--blanco);
+  border-radius: 10px;
 }
 .navbar-burger span {
   background-color: var(--azulOscuro);
@@ -67,8 +68,6 @@ nav ul li a:hover{
 a:hover{
   color: var(--azulGris);
 }
-
-
 
 .navbar-link{
   border-radius: 10px;
@@ -79,12 +78,16 @@ a:hover{
   color: rgb(0, 0, 0);
 }
 
-
-
 .logo-perfil{
   width: 5rem;
 }
 
 .navbar-item {
   color: black;
+}
+
+@media (max-width: 1023px) {
+  .navbar-link{
+      display: none;
+  }
 }
