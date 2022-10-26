@@ -3,7 +3,7 @@
   --azulOscuro:#0B2545;
   --azulGris:#8DA9C4;
   --blanco:#fff;
-  --fuente:'Quicksand', sans-serif;
+  --fuente:'Quicksand',BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 *{
@@ -27,7 +27,6 @@ nav{
   background-color:#dfdfdf;
   text-align: center;
   margin: 0 1rem 0 1rem;
-  border-radius: 10px;
 }
 
 .nav-bar-container{
@@ -67,11 +66,6 @@ nav ul li a:hover{
 
 a:hover{
   color: var(--azulGris);
-}
-
-.navbar-link{
-  border-radius: 10px;
-  background-color: var(--blanco);
 }
 
 .navbar-link:hover{

@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Truck - Proveedores</title>
+    <link rel="shortcut icon" href="./assets/images/logocortado.svg">
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
-    <link rel="shortcut icon" href="./assets/images/logocortado.svg">
     <link rel="stylesheet" href="./assets/css/foot.css">
     <link rel="stylesheet" href="./assets/css/proveedores.css">
     <script src="./assets/javascript/nav-bar.js"></script>
     <script src="./assets/javascript/modal.js"></script>
 </head>
 <body>
-  
+  <header>
+
   <div class="container-logo">
     <img src="./assets/images/logo-dark.svg" alt="Smarttruck">
  </div>
@@ -169,17 +170,22 @@
   <main>
 
     <section class="container-main">
-      <h2 class="is-text-align-center title is-2 has-text-white">Proveedores</h2>
-      <div >
- 
-       <div class="container">
-         <div class="table-flex">
+      <div class="container-blue">
+        <h2 class="is-text-align-center title is-2 has-text-white">Proveedores</h2>
+        
            <table class="table">
              <div class="field is-grouped">
-               <p class="control is-expanded">
+                <p class="control is-expanded">
                  <input class="input" type="text" placeholder="Buscar">
-               </p>
-                <a href="./registroproveedores.html"><img class="logo-add"  src="./assets/images/add.png" alt="Agregar proveedor"></a>
+                </p>
+               
+                <button class="button button-add js-modal-trigger" data-target="modal-add" type="button" style="width: 2.5rem;">
+                  <img src="./assets/images/add.png" alt="Agregar">
+                  <div class="overlay">
+                    <span class="span-add has-text-white">Agregar</span>
+                  </div>
+                </button>
+               
              </div>
              <thead>
                <tr>
@@ -187,8 +193,7 @@
                  <th>Nit</th>
                  <th><abbr>Proveedor</abbr></th>
                  <th><abbr>Estado</abbr></th>
-                 <th><abbr>
-               </abbr></th>
+                 <th><abbr>Opciones</abbr></th>
                </tr>
              </thead>
              
@@ -342,86 +347,93 @@
                     </tr>                
              </tbody>
            </table>
-         </div>
-     </div>
      
      
-     </div>
+     
+        
+      </div>
     </section>
  
-    <section class="modals">
+    <section class="container-modals">
  
-   <div id="modal-edit" class="modal is-clipped">
-     <div class="modal-background"></div>
-     <div class="modal-content" style="max-height: none;">
+      <div id="modal-edit" class="modal is-clipped">
+        <div class="modal-background"></div>
+        <div class="modal-content" style="max-height: none;">
        
-       <div class="container-form">
+          <div class="container-blue">
        
-         <h2 class="title is-2 has-text-white is-text-align-center">Modificar Proveedor</h2>
-         <form action="">
-           <div class="columns">
-               <div class="column is-half">
-                   <div class="field">
-                       <label class="label has-text-white">Nombre de la Empresa</label>
-                       <div class="control">
-                         <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
-                       </div>
-                   </div>
-         
-                   <div class="field">
-                       <label class="label has-text-white">Nit de la empresa</label>
-                       <input class="input" type="text" placeholder="Nit de la empresa" title="apellido de usuario" required>
-                   </div>
+            <h2 class="title is-2 has-text-white is-text-align-center">Modificar Proveedor</h2>
+            <form action="">
+              <div class="columns">
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label has-text-white">Nombre de la Empresa
+                      <div class="control">
+                        <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="field">
+                    <label class="label has-text-white">Nit de la empresa
+                      <input class="input" type="text" placeholder="Nit de la empresa" title="apellido de usuario" required>
+                    </label>
+                  </div>
    
-                   <div class="field">
-                       <label class="label has-text-white">Propietario de la empresa</label>
-                       <input class="input" type="text" placeholder="Propietario de la empresa" required>
-                   </div>
-         
-                   
-               </div>
+                  <div class="field">
+                    <label class="label has-text-white">Propietario de la empresa
+                      <input class="input" type="text" placeholder="Propietario de la empresa" required>
+                    </label>
+                  </div>
+
+                </div>
    
-               <div class="column is-half">
-                   <div class="field">
-                       <label class="label has-text-white">Numero de Telefono</label>
-                       <div class="control">
-                           <input class="input" type="number" placeholder="Numero de Telefono" required>
-                       </div>
-                   </div>
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label has-text-white">Numero de Telefono
+                      <div class="control">
+                        <input class="input" type="number" placeholder="Numero de Telefono" required>
+                      </div>
+                    </label>
+                  </div>
              
-                   <div class="field">
-                       <label class="label has-text-white">Ciudad de ubicacion</label>
-                       <input class="input" type="text" placeholder="Ciudad de ubicacion" required>
-                   </div>
+                  <div class="field">
+                    <label class="label has-text-white">Ciudad de ubicación
+                      <input class="input" type="text" placeholder="Ciudad de ubicacion" required>
+                    </label>
+                  </div>
              
-                   <div class="field">
-                       <label class="label has-text-white">Direccion</label>
-                       <input class="input" id="typepass" type="text" placeholder="Direccion" required>
-                       
-                   </div>
+                  <div class="field">
+                    <label class="label has-text-white">Dirección
+                      <input class="input" id="typepass" type="text" placeholder="Direccion" required>
+                    </label>
+                  </div>
    
-                 </div>
-               </div>
-               <div class="field is-grouped is-text-align-center">
+                </div>
+              </div>
+
+              <div class="field is-grouped is-text-align-center">
                    <div class="control grouped">
                        <button type="submit" class="button is-link">Modificar</button>
                    </div>
        
                    <div class="control grouped">
-                       <button type="button" class="button is-link is-light">Cancelar</button>
+                    <a href="./proveedores.html">
+                      <button type="button" class="button is-link is-light">Cancelar</button>
+                    </a>
                    </div>
                      
                    <div class="control grouped">
                        <input type="reset" class="button is-link is-light">
                    </div>
                </div>
-       </form>
-     </div>
+          </form>
+          </div>
      
-   </div>
- </div>
+        </div>
+      </div>
  
- <div id="modal-delete" class="modal">
+      <div id="modal-delete" class="modal">
    <div class="modal-background"></div>
  
    <div class="modal-content">
@@ -429,17 +441,105 @@
        <h1 class="title is-1 has-text-danger">Esta seguro que quiere eliminar este proveedor?</h1>
        <div class="field is-grouped is-flex is-justify-content-center">
          <div class="control">
-           <button class="button is-light">Si</button>
+          <a href="./proveedores.html">
+            <button class="button is-light">Si</button>
+          </a>
          </div>
          <div class="control">
-           <button class="button is-link is-danger">No</button>
+          <a href="./proveedores.html">
+            <button class="button is-link is-danger">No</button>
+          </a>
          </div>
          
        </div>
          
        </div>
    </div>
- </div>
+      </div>
+
+      <div id="modal-add" class="modal is-clipped">
+        <div class="modal-background"></div>
+        <div class="modal-content" style="max-height: none;">
+          
+          <div class="container-blue">
+       
+            <h2 class="is-text-align-center title is-2 has-text-white">Registrar proveedor</h2>
+        
+    
+    <form action="">
+        <div class="columns">
+            <div class="column is-half">
+                <div class="field">
+                    <label class="label has-text-white">Nombre de la Empresa</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
+                    </div>
+                </div>
+      
+                <div class="field">
+                    <label class="label has-text-white">Nit de la empresa</label>
+                    <input class="input" type="text" placeholder="Nit de la empresa" title="apellido de usuario" required>
+                </div>
+
+                <div class="field">
+                    <label class="label has-text-white">Propietario de la empresa</label>
+                    <input class="input" type="text" placeholder="Propietario de la empresa" required>
+                </div>
+      
+                <div class="field">
+                    <label class="label has-text-white">Tipo de producto</label>
+                    <div class="control">
+                        <div class="select">
+                            <select title="selecciona tipo de carga">
+                                <option>Liquido</option>
+                                <option>Solido</option>
+                                <option>Ganado</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="field">
+                    <label class="label has-text-white">Numero de Telefono</label>
+                    <div class="control">
+                        <input class="input" type="number" placeholder="Numero de Telefono" required>
+                    </div>
+                </div>
+          
+                <div class="field">
+                    <label class="label has-text-white">Ciudad de ubicacion</label>
+                    <input class="input" type="text" placeholder="Ciudad de ubicacion" required>
+                </div>
+          
+                <div class="field">
+                    <label class="label has-text-white">Direccion</label>
+                    <input class="input" id="typepass" type="text" placeholder="Direccion" required>
+                    
+                </div>
+        
+              </div>
+            </div>
+            <div class="field is-grouped">
+                <div class="control grouped">
+                    <a href="./proveedores.html"><button type="submit" class="button is-link">Registrar</button></a>
+                </div>
+    
+                <div class="control grouped">
+                  <a href="./proveedores.html"><button type="button" class="button is-light">Cancelar</button></a>
+                </div>
+                  
+                <div class="control grouped">
+                    <button type="reset" class="button is-light">Restablecer</button>
+                </div>
+            </div>
+    </form>
+            
+          </div>
+     
+        </div>
+      </div>
  
     </section>
 

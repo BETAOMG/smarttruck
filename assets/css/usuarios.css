@@ -10,24 +10,19 @@ html{
     background-color: var(--azulOscuro);
 }
 
-main{
+.modal-content, .container-main{
     display: flex;
     justify-content: center;
 }
 
-.container-main{
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: var(--azul);
-}
 
-.container-form{
+
+.container-blue{
     background-color: var(--azul);
-    margin: 2rem auto;
     padding: 2rem;
-    width: max-content;
+    width: fit-content;
     border-radius: 10px;
+    margin: 2rem;
 }
 
 .button{
@@ -45,15 +40,8 @@ main{
     width: fit-content;
 }
 
-
-.modal-content{
-    background-color: var(--azul);
-    padding: 2rem;
-    border-radius: 15px;
-}
-
 @media(max-width:560px){
-    main{
+    body{
         width: fit-content;
     }
 }
