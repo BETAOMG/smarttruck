@@ -361,7 +361,7 @@
                 <div class="field">
                   <label class="label has-text-white">Nombre</label>
                   <div class="control">
-                      <input class="input" type="text" placeholder="Nombre del conductor" title="Nombre del conductor" required autofocus>
+                      <input class="input" type="text" placeholder="Nombre del usuario" title="Nombre del usuario" required autofocus>
                   </div>
                 </div>
             
@@ -428,15 +428,20 @@
   <div id="modal-delete" class="modal">
     <div class="modal-background"></div>
   
-    <div class="modal-content">
-      <div class="container notification container-center">
-        <h1 class="title is-1 has-text-danger">Esta seguro que quiere eliminar este usuario?</h1>
+    <div class="modal-content" >
+      <div class="container-blue container-center" >
+       <img class="image-delete" src="./assets/images/delete.svg" alt="">
+        <h1 class="title is-1 has-text-white">¿Esta seguro de eliminar este usuario?</h1>
         <div class="field is-grouped is-flex is-justify-content-center">
           <div class="control">
-            <button class="button is-light">Si</button>
+           <a href="./proveedores.html">
+             <button class="button is-light">Si</button>
+           </a>
           </div>
           <div class="control">
-            <button class="button is-link is-danger">No</button>
+           <a href="./proveedores.html">
+             <button class="button is-link is-danger">No</button>
+           </a>
           </div>
           
         </div>

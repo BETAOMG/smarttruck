@@ -25,11 +25,22 @@ html{
     margin: 2rem;
 }
 
+.container-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .button{
     border-color: rgba(255, 255, 255, 0);
 }
 
-.contenedor .field.is-grouped{
+.image-delete{
+    width: 5rem;
+}
+
+.field.is-grouped{
     display: flex;
     justify-content: center;
 }
