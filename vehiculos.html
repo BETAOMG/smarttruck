@@ -5,34 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Truck - Vehiculos</title>
+    <link rel="shortcut icon" href="./assets/images/logocortado.svg">
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
-    <link rel="shortcut icon" href="./assets/images/logocortado.svg">
-    <script src="./assets/javascript/nav-bar.js"></script>
     <link rel="stylesheet" href="./assets/css/vehiculos.css">
+    <script src="./assets/javascript/nav-bar.js"></script>
+    <script src="./assets/javascript/modal.js"></script>
 </head>
 <body class="">
   
-  <div class="container-logo">
-    <img src="./assets/images/logo-dark.svg" alt="Smarttruck">
- </div>
- <nav class="navbar nav-bar-container" role="navigation" aria-label="main navigation" >
-
-  <div class="navbar-brand">  
-    <div class="navbar-burger has-background-light" data-target="navbarExampleTransparentExample">
-      <span></span>
-      <span></span>
-      <span></span>
+  <header>
+    <div class="container-logo">
+      <img src="./assets/images/logo-dark.svg" alt="Smarttruck">
     </div>
-  </div>
+    <nav class="navbar nav-bar-container" role="navigation" aria-label="main navigation" >
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu ">
-      <a class="navbar-item" href="./Inicio.html">
-        <img src="./assets/logo/home-logo.svg" width="" >
-      </a>
-          
+      <div class="navbar-brand">  
+        <div class="navbar-burger has-background-light" data-target="navbar-content">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
 
-          <div class="navbar-start">
+      <div id="navbar-content" class="navbar-menu ">
+        <a class="navbar-item" href="./Inicio.html">
+          <img src="./assets/logo/home-logo.svg" width="" >
+        </a>
+
+        <div class="navbar-start">
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link has-background-link-light">
               Gestionar
@@ -138,8 +139,9 @@
                   </a>
                 </div>
               </div>                              
-          </div>           
-          <div class="navbar-end">
+        </div>
+
+        <div class="navbar-end">
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link" href="#">
                <img class="logo-perfil" src="./assets/logo/github-logo.svg" alt="" >
@@ -156,56 +158,42 @@
                 </a>
               </div>
             </div>
+        </div>
+
+      </div>
+
+    </nav>
+
+
+  </header>
+
+  <main>
+
+    <section class="container-main">
+      <div class="container-blue">
+        <h2 class="title is-2 has-text-white is-text-align-center">Vehículos</h2>
+
+        <table class="table">
+          <div class="field is-grouped">
+            <p class="control is-expanded">
+              <input class="input" type="text" placeholder="Buscar">
+            </p>
+            <button class="button button-add js-modal-trigger" data-target="modal-add" type="button" style="width: 2.5rem;">
+              <img src="./assets/images/add.png" alt="Agregar">
+              <div class="overlay">
+                <span class="span-add has-text-white">Agregar</span>
+              </div>
+            </button>
           </div>
-        </div>
-
-  </nav>
-
-
-   </header>
-<div >
-
-
-  <section class="contenedor-formulario contenedor">
-    <div class="titulo">
-        <h1 class="title is-1 has-text-white">VEHICULOS</h1>
-    </div>
-  
-
-  <div class="container">
-    <div class="table-flex">
-      <table class="table">
-        <div class="field is-grouped">
-          <p class="control is-expanded">
-            <input class="input" type="text" placeholder="Find a repository">
-          </p>
-          <a href="./registrovehiculo.html">
-            <img class="logo-agregar" src="./assets/images/add.png" alt="10px">
-
-          </a>
-        </div>
         <thead>
           <tr>
-            <th><abbr title="id">id</abbr></th>
-            <th>placa</th>
-            <th><abbr title="Conductor">Conductor</abbr></th>
-            <th><abbr title="Estado">Estado</abbr></th>
-            <th><abbr title="Acciones" >
-              
-                
-          
-          </abbr></th>
+            <th><abbr>id</abbr></th>
+            <th>Placa</th>
+            <th><abbr>Conductor</abbr></th>
+            <th><abbr>Estado</abbr></th>
+            <th><abbr>Opciones</abbr></th>
           </tr>
         </thead>
-        <tfoot>
-          <tr>
-            <th><abbr title="id">id</abbr></th>
-            <th>placa</th>
-            <th><abbr title="Conductor">Conductor</abbr></th>
-            <th><abbr title="Estado">Estado</abbr></th>
-            <th><abbr title="Acciones">Acciones</abbr></th>
-          </tr>
-        </tfoot>
         <tbody>
           <tr>
             <th>1</th>
@@ -215,7 +203,7 @@
 
             <td>
               <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link has-background-link-light"></a>
+                <a class="navbar-link"></a>
       
                 <div class="navbar-dropdown">
                   <a class="navbar-item" href="./editarvehiculo.html"> 
@@ -241,7 +229,7 @@
 
             <td>
               <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link has-background-link-light"></a>
+                <a class="navbar-link"></a>
       
                 <div class="navbar-dropdown">
                   <a class="navbar-item" href="./editarvehiculo.html"> 
@@ -267,7 +255,7 @@
 
             <td>
               <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link has-background-link-light"></a>
+                <a class="navbar-link"></a>
       
                 <div class="navbar-dropdown">
                   <a class="navbar-item" href="./editarvehiculo.html"> 
@@ -294,7 +282,7 @@
   
               <td>
                 <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link has-background-link-light"></a>
+                  <a class="navbar-link"></a>
         
                   <div class="navbar-dropdown">
                     <a class="navbar-item" href="./editarvehiculo.html"> 
@@ -321,7 +309,7 @@
     
                 <td>
                   <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-background-link-light"></a>
+                    <a class="navbar-link"></a>
           
                     <div class="navbar-dropdown">
                       <a class="navbar-item" href="./editarvehiculo.html"> 
@@ -348,7 +336,7 @@
       
                   <td>
                     <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link has-background-link-light"></a>
+                      <a class="navbar-link"></a>
             
                       <div class="navbar-dropdown">
                         <a class="navbar-item" href="./editarvehiculo.html"> 
@@ -363,21 +351,203 @@
                       </div>
                     </div>
                   </td>
-                  
-                  
-                 
+
                 <tr>
             
         </tbody>
-      </table>
-    </div>
-</div>
-</section>
+        </table>
+      </div>
+    </section>
 
+    <section class="container-modals">
+ 
+      <div id="modal-edit" class="modal is-clipped">
+        <div class="modal-background"></div>
+        <div class="modal-content" style="max-height: none;">
+       
+          <div class="container-blue">
+       
+            <h2 class="title is-2 has-text-white is-text-align-center">Modificar Proveedor</h2>
+            <form action="">
+              <div class="columns">
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label has-text-white">Nombre de la Empresa
+                      <div class="control">
+                        <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
+                      </div>
+                    </label>
+                  </div>
 
-</div>
+                  <div class="field">
+                    <label class="label has-text-white">Nit de la empresa
+                      <input class="input" type="text" placeholder="Nit de la empresa" title="apellido de usuario" required>
+                    </label>
+                  </div>
    
-    
+                  <div class="field">
+                    <label class="label has-text-white">Propietario de la empresa
+                      <input class="input" type="text" placeholder="Propietario de la empresa" required>
+                    </label>
+                  </div>
+
+                </div>
+   
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label has-text-white">Numero de Telefono
+                      <div class="control">
+                        <input class="input" type="number" placeholder="Numero de Telefono" required>
+                      </div>
+                    </label>
+                  </div>
+             
+                  <div class="field">
+                    <label class="label has-text-white">Ciudad de ubicación
+                      <input class="input" type="text" placeholder="Ciudad de ubicacion" required>
+                    </label>
+                  </div>
+             
+                  <div class="field">
+                    <label class="label has-text-white">Dirección
+                      <input class="input" id="typepass" type="text" placeholder="Direccion" required>
+                    </label>
+                  </div>
+   
+                </div>
+              </div>
+
+              <div class="field is-grouped is-text-align-center">
+                   <div class="control grouped">
+                       <button type="submit" class="button is-link">Modificar</button>
+                   </div>
+       
+                   <div class="control grouped">
+                    <a href="./proveedores.html">
+                      <button type="button" class="button is-link is-light">Cancelar</button>
+                    </a>
+                   </div>
+                     
+                   <div class="control grouped">
+                       <input type="reset" class="button is-link is-light">
+                   </div>
+               </div>
+          </form>
+          </div>
+     
+        </div>
+      </div>
+ 
+      <div id="modal-delete" class="modal">
+   <div class="modal-background"></div>
+ 
+   <div class="modal-content">
+     <div class="container notification container-center">
+       <h1 class="title is-1 has-text-danger">Esta seguro que quiere eliminar este proveedor?</h1>
+       <div class="field is-grouped is-flex is-justify-content-center">
+         <div class="control">
+          <a href="./proveedores.html">
+            <button class="button is-light">Si</button>
+          </a>
+         </div>
+         <div class="control">
+          <a href="./proveedores.html">
+            <button class="button is-link is-danger">No</button>
+          </a>
+         </div>
+         
+       </div>
+         
+       </div>
+   </div>
+      </div>
+
+      <div id="modal-add" class="modal is-clipped">
+        <div class="modal-background"></div>
+        <div class="modal-content" style="max-height: none;">
+          
+          <div class="container-blue">
+
+            <h2 class="is-text-align-center title is-2 has-text-white">Registrar vehículo</h2>
+    <form action="">
+        <div class="columns">
+            <div class="column is-half">
+                <div class="field">
+                    <label class="label has-text-white">Placa</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Placa del vehiculo" title="Placa del vehiculo" required autofocus>
+                    </div>
+                </div>
+      
+                <div class="field">
+                    <label class="label has-text-white">ID conductor</label>
+                    <input class="input" type="number" placeholder="Id del conductor" title="Id del conductor" required>
+                </div>
+
+                
+
+                <div class="field">
+                    <label class="label has-text-white">Tipo de vehículo</label>
+                    <div class="control">
+                        <div class="select">
+                            <select title="selecciona tipo de vehículo">
+                                <option>Volqueta</option>
+                                <option>Camión</option> 
+                                <option>Tractocamión</option> 
+                            </select>
+                        </div>
+                    </div>
+                </div>
+      
+            </div>
+
+            <div class="column is-half">
+                
+                <div class="field">
+                    <label class="label has-text-white">Numero de ejes</label>
+                    <div class="control">
+                        <input class="input" type="number" placeholder="Numero de ejes" title="Número de ejes" required>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label has-text-white">Estado</label>
+                    <div class="control">
+                        <div class="select">
+                            <select title="selecciona el estado de vehículo">
+                                <option>Activo</option>
+                                <option>Inactivo</option> 
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+          
+                
+        
+                <div class="field is-grouped">
+                    <div class="control grouped">
+                        <a href="./proveedores.html"><button type="submit" class="button is-link">Registrar</button></a>
+                    </div>
+        
+                    <div class="control grouped">
+                      <a href="./proveedores.html"><button type="button" class="button is-link is-light">Cancelar</button></a>
+                    </div>
+                      
+                    <div class="control grouped">
+                        <input type="reset" class="button is-link is-light">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+          </div>
+        </div>
+ 
+    </section>
+
+  </main>
 
 </body>
 </html>
