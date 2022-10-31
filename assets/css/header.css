@@ -22,6 +22,10 @@
    width: 25rem;
  }
 
+ header{
+  margin: 0 5rem;
+ }
+
 nav{
   height: 60px;
   background-color:#dfdfdf;
