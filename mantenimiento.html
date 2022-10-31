@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Truck - Mantenimiento</title>
+    <link rel="shortcut icon" href="./assets/images/logocortado.svg">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/foot.css">
+    <link rel="stylesheet" href="./assets/css/proveedores.css">
+    <script src="./assets/javascript/nav-bar.js"></script>
+    <script src="./assets/javascript/modal.js"></script>
+</head>
+<body>
+  <header>
+
+  <div class="container-logo">
+    <img src="./assets/images/logo-dark.svg" alt="Smarttruck">
+ </div>
+ <nav class="navbar nav-bar-container" role="navigation" aria-label="main navigation" >
+
+  <div class="navbar-brand">  
+    <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu ">
+      <a class="navbar-item" href="./Inicio.html">
+        <img src="./assets/logo/home-logo.svg" width="" >
+      </a>
+          
+
+          <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link has-background-link-light">
+              Gestionar
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="./usuarios.html">
+                  Usuarios 
+                </a>
+              
+              
+                <a class="navbar-item" href="./proveedores.html">
+                  Proveedores 
+                </a>
+              
+              
+                <a class="navbar-item" href="./vehiculos.html">
+                  Vehiculos 
+                </a>
+              </div>
+              
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link has-background-link-light">
+                Mantenimiento
+              </a>
+              
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="./mantenimiento.html">
+                  Gestionar mantenimiento
+                </a>
+              </div>
+              
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link has-background-link-light">
+                Documentacion
+              </a>
+          
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="./documentacion.html">
+                  Gestionar documentacion
+                </a>                    
+              </div>
+            </div> 
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link has-background-link-light" href="./normativa.html">
+                Normativas
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  Marco Normativo General
+                </a>
+                <a class="navbar-item">
+                  Estructura Empresarial
+                </a>
+                <a class="navbar-item">
+                  Condiciones De Equipo
+                </a>                      
+                <a class="navbar-item">
+                  Relaciones Economicas
+                </a>
+                <a class="navbar-item">
+                  Normas De Transito
+                </a>
+                <a class="navbar-item">
+                  Transporte Multimodal Internacional
+                </a>
+                <a class="navbar-item">
+                  Mercancias Peligrosass
+                </a>
+              </div>
+              </div>
+              
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link has-background-link-light">
+                  Rutas
+                </a>
+        
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Satrack
+                  </a>
+                  <a class="navbar-item">
+                    Peaje
+                  </a>
+                  <a class="navbar-item">
+                    Cierre vial
+                  </a>
+                 
+                </div>
+              </div>
+              
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link has-background-link-light">
+                  Atencion al cliente
+                </a>
+        
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="./atencionalcliente.html">
+                    Preguntas,  reclamos, sugerencias
+                  </a>
+                </div>
+              </div>                              
+          </div>           
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">
+               <img class="logo-perfil" src="./assets/logo/github-logo.svg" alt="" >
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="#">
+                  Ver perfil
+                </a>
+                  
+                <hr class="navbar-divider">
+                  
+                <a class="navbar-item is-active" href="./inicio-sesion.html">
+                  Cerrar sesion
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </nav>
+
+
+  </header>
+
+  <main>
+
+    <section class="container-main">
+      <div class="container-blue">
+        <h2 class="is-text-align-center title is-2 has-text-white">Mantenimiento</h2>
+        
+           <table class="table">
+             <div class="field is-grouped">
+                <p class="control is-expanded">
+                 <input class="input" type="text" placeholder="Buscar">
+                </p>
+               
+                <button class="button button-add js-modal-trigger" data-target="modal-add" type="button" style="width: 2.5rem;">
+                  <img src="./assets/images/add.png" alt="Agregar">
+                  <div class="overlay">
+                    <span class="span-add has-text-white">Agregar</span>
+                  </div>
+                </button>
+               
+             </div>
+             <thead>
+               <tr>
+                 <th><abbr>ID</abbr></th>
+                 <th>Placa Veh.</th>
+                 <th><abbr>Nombre Cond.</abbr></th>
+                 <th><abbr>Descripcion</abbr></th>
+                 <th><abbr>Valor</abbr></th>
+                 <th><abbr>Fecha</abbr></th>
+                 <th>Factura</th>
+                 <th><abbr>Opciones</abbr></th>
+                 
+               </tr>
+             </thead>
+             
+             <tbody>
+               <tr>
+                 <th>1</th>
+                 <td>TLP 245</td>
+                 <td>Carlos Julio Perez Mora</td>
+                 <td>Alineamiento de ejes traseros </td>
+                 <td>$250.000</td>
+                 <td>31/10/2021</td>
+                 <td>
+                        <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                 </td>
+     
+                 <td>
+                   <div class="navbar-item has-dropdown is-hoverable">
+                     <a class="navbar-link"></a>
+                     <div class="navbar-dropdown">
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                         <img src="./assets/images/editar.png" alt="">
+                           Editar
+                       </button>
+                           
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                         <img src="./assets/images/eliminar.png" alt="">
+                           Eliminar
+                       </button>
+                     </div>
+                   </div>
+                 </td>
+                 
+                 
+                </tr>
+                <tr>
+                 <th>2</th>
+                 <td>TDM 735</td>
+                 <td>Brayan Camilo Merchan Navas</td>
+                 <td>Engrase general</td>
+                 <td>$180.000</td>
+                 <td>09/08/2022</td>
+                 <td>
+                  <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                </td>
+     
+                 <td>
+                   <div class="navbar-item has-dropdown is-hoverable">
+                     <a class="navbar-link"></a>
+                     <div class="navbar-dropdown">
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                         <img src="./assets/images/editar.png" alt="">
+                           Editar
+                       </button>
+                           
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                         <img src="./assets/images/eliminar.png" alt="">
+                           Eliminar
+                       </button>
+                     </div>
+                   </div>
+                 </td>
+                 
+                 
+                </tr>
+               <tr>
+                 <th>3</th>
+                 <td>SXS 198</td>
+                 <td>Jose Angel Lopez Sierra</td>
+                 <td>Cambio de bandas traseras</td>
+                 <td>$480.000</td>
+                 <td>07/09/2022</td>
+                 <td>
+                  <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                </td>
+     
+                 <td>
+                   <div class="navbar-item has-dropdown is-hoverable">
+                     <a class="navbar-link"></a>
+                     <div class="navbar-dropdown">
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                         <img src="./assets/images/editar.png" alt="">
+                           Editar
+                       </button>
+                           
+                       <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                         <img src="./assets/images/eliminar.png" alt="">
+                           Eliminar
+                       </button>
+                     </div>
+                   </div>
+                 </td>
+               </tr>
+                 
+                
+                <tr>
+                   <th>4</th>
+                   <td>KUN 340</td>
+                   <td>Mauricio Calixto Perez </td>
+                   <td>Nuevos bujes</td>
+                   <td>$680.000</td>
+                   <td>17/04/2020</td>
+                   <td>
+                    <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                  </td>
+                   <td>
+                     <div class="navbar-item has-dropdown is-hoverable">
+                       <a class="navbar-link"></a>
+                       <div class="navbar-dropdown">
+                         <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                           <img src="./assets/images/editar.png" alt="">
+                             Editar
+                         </button>
+                             
+                         <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                           <img src="./assets/images/eliminar.png" alt="">
+                             Eliminar
+                         </button>
+                       </div>
+                     </div>
+                   </td>
+                  </tr>
+
+                    <tr>
+                   
+                     <th>5</th>
+                     <td>SZK 560</td>
+                     <td>Andres Felipe Barahona Beltran</td>
+                     <td>Lujos y luces trailer</td>
+                     <td>$350.000</td>
+                     <td>12/02/2022</td>
+                     <td>
+                      <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                     </td>
+         
+                     <td>
+                       <div class="navbar-item has-dropdown is-hoverable">
+                         <a class="navbar-link"></a>
+                         <div class="navbar-dropdown">
+                           <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                             <img src="./assets/images/editar.png" alt="">
+                               Editar
+                           </button>
+                               
+                           <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                             <img src="./assets/images/eliminar.png" alt="">
+                               Eliminar
+                           </button>
+                         </div>
+                       </div>
+                     </td>
+                    </tr>
+
+                    <tr>
+                       <th>6</th>
+                       <td>XIK 352</td>
+                       <td>Jeison Fabian Arciniegas Orduz</td>
+                       <td>Arreglo hidraulico y aire acondicionado</td>
+                       <td>$1.500.000</td>                    
+                       <td>25/06/2021 </td>
+                       <td>
+                        <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                       </td>
+           
+                       <td>
+                         <div class="navbar-item has-dropdown is-hoverable">
+                           <a class="navbar-link"></a>
+                           <div class="navbar-dropdown">
+                             <button class="js-modal-trigger button navbar-item" data-target="modal-edit">
+                               <img src="./assets/images/editar.png" alt="">
+                                 Editar
+                             </button>
+                                 
+                             <button class="js-modal-trigger button navbar-item" data-target="modal-delete">
+                               <img src="./assets/images/eliminar.png" alt="">
+                                 Eliminar
+                             </button>
+                           </div>
+                         </div>
+                       </td>
+ 
+                    </tr>                
+             </tbody>
+           </table>
+     
+     
+     
+        
+      </div>
+    </section>
+ 
+    <section class="container-modals">
+ 
+      <div id="modal-edit" class="modal is-clipped">
+        <div class="modal-background"></div>
+        <div class="modal-content" style="max-height: none;">
+       
+          <div class="container-blue">
+       
+            <h2 class="title is-2 has-text-white is-text-align-center">Modificar Mantenimiento</h2>
+            <form action="">
+              <div class="columns">
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label has-text-white">Placa Vehiculos
+                      <div class="control">
+                        <input class="input" type="text" placeholder="Placa vehiculo" title="Placa vehiculo" required autofocus>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="field">
+                    <label class="label has-text-white">Nombre Conductor
+                      <input class="input" type="text" placeholder="Nombre Conductor" title="Nombre Conductor" required>
+                    </label>
+                  </div>
+                  <div class="field">
+                    <label class="label has-text-white">Valor Mantenimiento
+                      <input class="input" type="text" placeholder="Valor Mantenimiento" title="Valor Mantenimiento" required>
+                    </label>
+                  </div>
+   
+                  
+
+                </div>
+   
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label has-text-white">Fecha
+                      <div class="control">
+                        <input class="input" type="date" required>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="field">
+                    <label class="label has-text-white">Descripcion 
+                      <input class="input" type="text" placeholder="Descripcion" required>
+                    </label>
+                  </div>
+                  <div class="field">
+                    <div class="file">
+                      <label class="label has-text-white"> Agregar Factura
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                          <span class="file-icon">
+                            <img src="./assets/logo/upload-file.svg" alt="">
+                          </span>
+                          <span class="">
+                            Agregar Factura
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                
+   
+                </div>
+              </div>
+
+              <div class="field is-grouped is-text-align-center">
+                   <div class="control grouped">
+                       <button type="submit" class="button is-link">Modificar</button>
+                   </div>
+       
+                   <div class="control grouped">
+                    <a href="./mantenimiento.html">
+                      <button type="button" class="button is-link is-light">Cancelar</button>
+                    </a>
+                   </div>
+                     
+                   <div class="control grouped">
+                       <input type="reset" class="button is-link is-light">
+                   </div>
+               </div>
+          </form>
+          </div>
+     
+        </div>
+      </div>
+ 
+    <div id="modal-delete" class="modal">
+   <div class="modal-background"></div>
+ 
+   <div class="modal-content" >
+     <div class="container-blue container-center" >
+      <img class="image-delete" src="./assets/images/delete.svg" alt="">
+       <h1 class="title is-1 has-text-white">¿Esta seguro de eliminar este mantenimiento?</h1>
+       <div class="field is-grouped is-flex is-justify-content-center">
+         <div class="control">
+          <a href="./mantenimiento.html">
+            <button class="button is-light">Si</button>
+          </a>
+         </div>
+         <div class="control">
+          <a href="./mantenimiento.html">
+            <button class="button is-link is-danger">No</button>
+          </a>
+         </div>
+         
+       </div>
+         
+       </div>
+   </div>
+      </div>
+
+      <div id="modal-add" class="modal is-clipped">
+        <div class="modal-background"></div>
+        <div class="modal-content" style="max-height: none;">
+          
+          <div class="container-blue">
+       
+            <h2 class="title is-2 has-text-white is-text-align-center">Agregar Mantenimiento</h2>
+            <form action="">
+              <div class="columns">
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label has-text-white">Placa Vehiculos
+                      <div class="control">
+                        <input class="input" type="text" placeholder="Placa vehiculo" title="Placa vehiculo" required autofocus>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="field">
+                    <label class="label has-text-white">Nombre Conductor
+                      <input class="input" type="text" placeholder="Nombre Conductor" title="Nombre Conductor" required>
+                    </label>
+                  </div>
+                  <div class="field">
+                    <label class="label has-text-white">Valor Mantenimiento
+                      <input class="input" type="text" placeholder="Valor Mantenimiento" title="Valor Mantenimiento" required>
+                    </label>
+                  </div>
+   
+                  
+
+                </div>
+   
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label has-text-white">Fecha
+                      <div class="control">
+                        <input class="input" type="date" required>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="field">
+                    <label class="label has-text-white">Descripcion 
+                      <input class="input" type="text" placeholder="Descripcion" required>
+                    </label>
+                  </div>
+
+                  <div class="field">
+                    <div class="file">
+                      <label class="label has-text-white"> Agregar Factura
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                          <span class="file-icon">
+                            <img src="./assets/logo/upload-file.svg" alt="">
+                          </span>
+                          <span class="file-label">
+                            Agregar Factura
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                
+        
+              </div>
+            </div>
+            <div class="field is-grouped">
+                <div class="control grouped">
+                    <a href="./mantenimiento.html"><button type="submit" class="button is-link">Registrar</button></a>
+                </div>
+    
+                <div class="control grouped">
+                  <a href="./mantenimiento.html"><button type="button" class="button is-light">Cancelar</button></a>
+                </div>
+                  
+                <div class="control grouped">
+                    <button type="reset" class="button is-light">Restablecer</button>
+                </div>
+            </div>
+    </form>
+            
+          </div>
+     
+        </div>
+      </div>
+ 
+    </section>
+
+
+  </main>
+
+  
+<footer>
+        
+  <div class="social-icon-container">
+      <a href="" class="social-icon"></a>
+      <a href="" class="social-icon"></a>
+      <a href="" class="social-icon"></a>
+      <a href="" class="social-icon"></a>
+  </div>
+  <ul class="footer-menu-container">
+      <li class="menu-item">Legal</li>
+      <li class="menu-item">Cookies</li>
+      <li class="menu-item">Privacy</li>
+      <li class="menu-item">Shipping</li>
+      <li class="menu-item">Refounds</li>
+  </ul>
+  <span class="copyright">&copy;2022,  Todos los derechos reservados <br> Desarrollado por: Clan ADSI_MC</span>
+</footer>
+  
+
+</body>
+</html>
