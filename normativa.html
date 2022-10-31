@@ -7,9 +7,11 @@
     <title>Smart Truck - Inicio</title>
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/foot.css">
     <link rel="stylesheet" href="./assets/css/normativa.css">
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
     <script src="./assets/javascript/nav-bar.js"></script>
+    <script src="./assets/javascript/modal.js"></script>
 </head>
 <body>
   
@@ -197,50 +199,155 @@
 
       
    
-      <section class="navegacionlateral">
-   <div>
-    
-      <ul class="normativaopciones">
-        <li>
-            <a href="./normativa1.html" class="active">
-                <i class="aspecto"></i>
-                Marco normativo general
-            </a>
-        </li>
-        <li><a href="#">
-                <i class="aspecto"></i>
-                Estructura empresarial
-            </a>
-        </li>
-        <li><a href="#">
-                <i class="aspecto"></i>
-                Condiciones de equipo
-            </a>
-        </li>
-        <li><a href="#"><i class="aspecto"></i>
-                Relaciones economicas
-            </a>
-        </li>
-        <li><a href="#"><i class="aspecto"></i>
-                Normas de transito
-            </a>
-        </li>
-        <li><a href="#"><i class="aspecto"></i>
-                Transporte multimodal
-            </a>
-        </li>
-        <li><a href="#"><i class="aspecto"></i>
-                Mercancias peligrosas
-            </a>
-       </li>
-       
-    </ul>
-    
-   </div>
-  </section>
-    
+      <main>
+        <section>
+          <div class="columns is-desktop m-6">
+            <div class="column item m-2 p-6">      
+              <button class="js-modal-trigger button button-transparent" data-target="modal-mng">
+                <h4 class="title is-4 has-text-white">Marco Normativo General</h4>
+              </button>
+            </div>
+            <div class="column item m-2 p-6">
+              <button class="js-modal-trigger button button-transparent" data-target="modal-ee">
+                <h4 class="title is-4 has-text-white">Estructura empresarial</h4>
+              </button>
+            </div>
+            <div class="column item m-2 p-6">
+              <button class="js-modal-trigger button button-transparent" data-target="modal-mng">
+                <h4 class="title is-4 has-text-white">Condiciones de equipo</h4>
+              </button>
+            </div>
+            <div class="column item m-2 p-6">
+              <button class="js-modal-trigger button button-transparent" data-target="modal-mng">
+                <h4 class="title is-4 has-text-white">Relaciones Economicas</h4>
+              </button>
+            </div>
+           
+            
+          </div>
+          <div class="columns is-desktop m-6">
+          <div class="column item m-2 p-6">
+            <button class="js-modal-trigger button button-transparent" data-target="modal-mng">
+              <h4 class="title is-4 has-text-white">Normas de Transito</h4>
+            </button>
+          </div>
+          <div class="column item m-2 p-6">
+            <button class="js-modal-trigger button button-transparent" data-target="modal-mng">
+              <h4 class="title is-4 has-text-white">Transporte Multimodal</h4>
+            </button>
+          </div>
+          <div class="column item m-2 p-6">
+            <button class="js-modal-trigger button button-transparent" data-target="modal-mng">
+              <h4 class="title is-4 has-text-white">Transporte Internacional</h4>
+            </button>
+          </div>
+          <div class="column item m-2 p-6">
+            <button class="js-modal-trigger button button-transparent" data-target="modal-mng">
+              <h4 class="title is-4 has-text-white">Mercancias Peligrosas</h4>
+            </button>
+          </div>
+        </div>
+          
+        </section>
+        <section>
 
-  </div>
+          <!-- modales -->
+
+          <!-- modal mng -->
+
+          <div id="modal-mng" class="modal is-clipped">
+            <div class="modal-background"></div>
+            <div class="modal-content" style="max-height: none;">
+              <div class="container-blue is-text-align-center">
+                <h2 class="is-text-align-center title is-2 has-text-white">Marco normativo</h2>
+
+                <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=41102" class="" target="_blank">
+                  <button class="button is-rounded m-3">Decreto 410 de 1971</button>
+                </a>
+          
+          
+              <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=296" class="m-3"  target="_blank">
+                  <button class="button is-rounded m-3">Ley 105 de 1993</button>
+              </a>
+              
+              <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=346" class="m-3"  target="_blank">
+                  <button class="button is-rounded m-3">Ley 336 de 1996</button>
+              </a>
+          
+              <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=43101" class="m-3"  target="_blank">
+                  <button class="button is-rounded m-3">Ley 1450 de 2011</button>
+              </a>
+
+              <a href="https://www.academia.edu/26478559/R%C3%89GIMEN_JUR%C3%8DDICO_DEL_TRANSPORTE_TERRESTRE_EN_COLOMBIA" class="m-3"  target="_blank">
+                <button class="button is-rounded m-3">Regimen Juridico</button>
+              </a>
+
+              <a href="https://www.redjurista.com/Documents/codigo_nacional_de_transito_terrestre_-_ley_769_de_2002.aspx#/" class="m-3"  target="_blank">
+              <button class="button is-rounded m-3">Ley 769 de 2002</button>
+              </a>
+                
+            </div>
+            
+          </div>
+        </div>
+
+
+        <!-- modal ee -->
+        <div id="modal-ee" class="modal is-clipped">
+          <div class="modal-background"></div>
+          <div class="modal-content" style="max-height: none;">
+            <div class="container-blue is-text-align-center">
+              <h2 class="is-text-align-center title is-2 has-text-white">Estructura Empresarial</h2>
+              <a href="https://www.suin-juriscol.gov.co/viewDocument.asp?ruta=Decretos/1390283" class="" target="_blank">
+                <button class="button is-rounded m-3">Decreto 2044 De 1988</button>
+            </a>
+        
+        
+            <a href="https://www.minsalud.gov.co/Normatividad_Nuevo/Forms/DispForm.aspx?ID=4909" class="m-3"  target="_blank">
+                <button class="button is-rounded m-3">Resolución No. 2165 de 2016</button>
+            </a>
+            
+            <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4308" class="m-3"  target="_blank">
+                <button class="button is-rounded m-3">Decreto 173 de 2001</button>
+            </a>
+        
+            <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=43101" class="m-3"  target="_blank">
+                <button class="button is-rounded m-3">Ley 1450 de 2011</button>
+            </a>
+
+            <a href="https://www.academia.edu/26478559/R%C3%89GIMEN_JUR%C3%8DDICO_DEL_TRANSPORTE_TERRESTRE_EN_COLOMBIA" class="m-3"  target="_blank">
+              <button class="button is-rounded m-3">Regimen Juridico</button>
+            </a>
+
+            <a href="https://www.redjurista.com/Documents/codigo_nacional_de_transito_terrestre_-_ley_769_de_2002.aspx#/" class="m-3"  target="_blank">
+            <button class="button is-rounded m-3">Ley 769 de 2002</button>
+            </a>
+              
+          </div>
+          
+        </div>
+      </div>
+        </section>
+      </main>
+    
+      <footer>
+        
+        <div class="social-icon-container">
+          <a href="" class="social-icon"></a>
+          <a href="" class="social-icon"></a>
+          <a href="" class="social-icon"></a>
+          <a href="" class="social-icon"></a>
+        </div>
+        <ul class="footer-menu-container">
+          <li class="menu-item">Legal</li>
+          <li class="menu-item">Cookies</li>
+          <li class="menu-item">Privacy</li>
+          <li class="menu-item">Shipping</li>
+          <li class="menu-item">Refounds</li>
+        </ul>
+        <span class="copyright">&copy;2022,  Todos los derechos reservados <br> Desarrollado por: Clan ADSI_MC</span>
+      </footer>
+  
 
 
 

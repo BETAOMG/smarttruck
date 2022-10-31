@@ -28,6 +28,17 @@ body{
   margin: 2rem;
 }
 
+.container-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-delete{
+  width: 5rem;
+}
+
 .field.is-grouped{
   justify-content: center;
 }
