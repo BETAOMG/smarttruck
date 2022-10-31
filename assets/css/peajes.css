@@ -1,0 +1,12 @@
+.container-section{
+    display: flex;
+    justify-content: center;
+}
+
+.container-blue{
+    background-color: var(--azul);
+    padding: 2rem;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 2rem;
+}
