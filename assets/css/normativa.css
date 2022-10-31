@@ -33,14 +33,16 @@
   width: fit-content;
   border-radius: 10px;
   margin: 2rem;
+
 }
 
 .button-transparent{
   background-color: transparent;
   border: none;
+  width: 100%;
 }
  
-.item:hover, h4:hover{
+.container-blue:hover, h4:hover{
   background-color: var(--azulGris);
   
  
