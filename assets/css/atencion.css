@@ -9,3 +9,31 @@
 html{
   background-color: var(--azulOscuro);  
 }
+
+section{
+  display: flex;
+  justify-content: center;
+}
+
+.container-blue{
+  background-color: var(--azul);
+  padding: 3rem ;
+  border-radius: 10px;
+  margin: 5rem;
+}
+
+.field.is-grouped{
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.logo img{
+  width: 10rem;
+}
