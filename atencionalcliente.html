@@ -6,209 +6,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Truck - Atencion al cliente</title>
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
-    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
     <link rel="stylesheet" href="./assets/css/atencion.css">
     <link rel="stylesheet" href="./assets/css/foot.css">
     <script src="./assets/javascript/nav-bar.js"></script>
 </head>
-<body class="">
-  
-  <div class="container-logo">
-    <img src="./assets/images/logo-dark.svg" alt="Smarttruck">
- </div>
- <nav class="navbar nav-bar-container" role="navigation" aria-label="main navigation" >
+<body>
 
-  <div class="navbar-brand">  
-    <div class="navbar-burger has-background-light" data-target="navbarExampleTransparentExample">
-      <span></span>
-      <span></span>
-      <span></span>
+  <header>
+
+    <div class="container-logo">
+      <img src="./assets/images/logo-dark.svg" alt="Smarttruck">
     </div>
-  </div>
+     
+    <nav class="navbar nav-bar-container" role="navigation" aria-label="main navigation" >
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu ">
-      <a class="navbar-item" href="./Inicio.html">
-        <img src="./assets/logo/home-logo.svg" width="" >
-      </a>
-          
+      <div class="navbar-brand">  
+        <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
 
-          <div class="navbar-start">
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link has-background-link-light">
+      <div id="navbarExampleTransparentExample" class="navbar-menu ">
+        <a class="navbar-item" href="./inicio.html">
+          <img src="./assets/logo/home-logo.svg" width="" >
+        </a>
+
+        <div class="navbar-start">
+
+          <div class="navbar-item has-dropdown is-hoverable">
+
+            <a class="navbar-link has-background-link-light">
               Gestionar
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./usuarios.html">
+                Usuarios 
               </a>
-      
-              <div class="navbar-dropdown">
-                <a class="navbar-item" href="./usuarios.html">
-                  Usuarios 
-                </a>
-              
-              
-                <a class="navbar-item" href="./proveedores.html">
-                  Proveedores 
-                </a>
-              
-              
-                <a class="navbar-item" href="./vehiculos.html">
-                  Vehiculos 
-                </a>
-              </div>
-              
+
+              <a class="navbar-item" href="./proveedores.html">
+                Proveedores 
+              </a>
+
+              <a class="navbar-item" href="./vehiculos.html">
+                Vehiculos 
+              </a>
             </div>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link has-background-link-light">
-                Mantenimiento
+                  
+          </div>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link has-background-link-light">
+              Mantenimiento
+            </a>
+                  
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./mantenimiento.html">
+                Gestionar mantenimiento
               </a>
-              
-              <div class="navbar-dropdown">
-                <a class="navbar-item" href="./mantenimiento.html">
-                  Gestionar mantenimiento
-                </a>
-              </div>
-              
             </div>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link has-background-link-light">
-                Documentacion
-              </a>
+                  
+          </div>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link has-background-link-light">
+              Documentacion
+            </a>
+              
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./documentacion.html">
+                Gestionar documentacion
+              </a>                    
+            </div>
+          </div> 
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link has-background-link-light">
+              Normativas
+            </a>
           
-              <div class="navbar-dropdown">
-                <a class="navbar-item" href="./documentacion.html">
-                  Gestionar documentacion
-                </a>                    
-              </div>
-            </div> 
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link has-background-link-light" href="./normativa.html">
-                Normativas
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./normativa.html">
+                Ver normativas
               </a>
-      
-              <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  Marco Normativo General
-                </a>
-                <a class="navbar-item">
-                  Estructura Empresarial
-                </a>
-                <a class="navbar-item">
-                  Condiciones De Equipo
-                </a>                      
-                <a class="navbar-item">
-                  Relaciones Economicas
-                </a>
-                <a class="navbar-item">
-                  Normas De Transito
-                </a>
-                <a class="navbar-item">
-                  Transporte Multimodal Internacional
-                </a>
-                <a class="navbar-item">
-                  Mercancias Peligrosass
-                </a>
-              </div>
-              </div>
-              
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link has-background-link-light">
-                  Rutas
-                </a>
-        
-                <div class="navbar-dropdown">
-                  <a class="navbar-item">
-                    Satrack
-                  </a>
-                  <a class="navbar-item">
-                    Peaje
-                  </a>
-                  <a class="navbar-item">
-                    Cierre vial
-                  </a>
-                 
-                </div>
-              </div>
-              
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link has-background-link-light">
-                  Atencion al cliente
-                </a>
-        
-                <div class="navbar-dropdown">
-                  <a class="navbar-item" href="./atencionalcliente.html">
-                    Preguntas,  reclamos, sugerencias
-                  </a>
-                </div>
-              </div>                              
-          </div>           
-          <div class="navbar-end">
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="#">
-               <img class="logo-perfil" src="./assets/logo/github-logo.svg" alt="" >
-              </a>
-              <div class="navbar-dropdown is-boxed">
-                <a class="navbar-item" href="#">
-                  Ver perfil
-                </a>
-                  
-                <hr class="navbar-divider">
-                  
-                <a class="navbar-item is-active" href="./inicio-sesion.html">
-                  Cerrar sesion
-                </a>
-              </div>
             </div>
+
           </div>
-        </div>
-
-  </nav>
-
-
-   </header>
-   
-   <div class="columns">
-    <div class="column is-one-third">
-        
-    </div>
-    <div class="column">
-
-        <form action="" class="mt-6">
-        <div class="field">
-            <label class="label has-text-white">Nombre</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Nombre">
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label has-text-white">Email</label>
-            <div class="control">
-              <input class="input" type="email" placeholder="Correo">
-            </div>
+                  
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link has-background-link-light">
+              Rutas
+            </a>
             
-          </div>
-          
-          <div class="field">
-            <label class="label has-text-white">Mensaje</label>
-            <div class="control">
-              <textarea class="textarea" placeholder="Mensaje"></textarea>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./satrack.html">
+                Satrack
+              </a>
+              <a class="navbar-item" href="./peajes.html">
+                Peaje
+              </a>
+              <a class="navbar-item" href="./cierrevial.html">
+                Cierre vial
+              </a>
+                     
             </div>
           </div>
-          
-          <input class="button has-background-link" type="submit">
-          <input class="button" type="reset">
-
-
-        </form>
-          
-          
-          
-
+                  
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link has-background-link-light">
+              Atencion al cliente
+            </a>
+            
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./atencionalcliente.html">
+                Preguntas,  reclamos, sugerencias
+              </a>
+            </div>
+          </div>                              
         </div>
 
-    <div class="column">
-        <img src="./assets/logo/call-logo.svg" alt="">
-    </div>
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#">
+              <img class="logo-perfil" src="./assets/logo/github-logo.svg" alt="" >
+            </a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="#">
+                Ver perfil
+              </a>
+                      
+              <hr class="navbar-divider">
+                      
+              <a class="navbar-item is-active" href="./inicio-sesion.html">
+                Cerrar sesion
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+   <main>
+    <section>
+   <div class="container-blue">
+    <h2 class="title is-2 has-text-white is-text-align-center">Atencion al cliente</h2>
+    <div class="logo">
+      <img src="./assets/logo/call-logo.svg" alt="">
   </div>
+    <form action="" class="mt-6">
+
+        <div class="columns">
+          <div class="column is-half">
+            
+            <div class="field">
+              <label class="label has-text-white">Nombre</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Nombre">
+              </div>
+            </div>
+    
+            <div class="field">
+              <label class="label has-text-white">Email</label>
+              <div class="control">
+                <input class="input" type="email" placeholder="Correo">
+              </div>
+              
+            </div>
+
+          </div>
+          <div class="column is-half">
+
+            <div class="field">
+              <label class="label has-text-white">Mensaje</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Mensaje"></textarea>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="field is-grouped is-text-align-center">
+          <div class="control grouped">
+              <button type="submit" class="button is-link">Enviar</button>
+          </div>
+
+          <div class="control grouped">
+           <a href="./atencionalcliente.html">
+             <button type="button" class="button is-link is-light">Cancelar</button>
+           </a>
+          </div>
+            
+          <div class="control grouped">
+              <input type="reset" class="button is-link is-light">
+          </div>
+      </div>
+
+        
+      </form>
+   </div>
+  </section>
+  </main>
+
 
 
   <footer>

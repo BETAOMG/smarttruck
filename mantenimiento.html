@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Truck - Proveedores</title>
+    <title>Smart Truck - Mantenimiento</title>
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="./assets/css/header.css">
@@ -155,7 +155,7 @@
 
     <section class="container-main">
       <div class="container-blue">
-        <h2 class="is-text-align-center title is-2 has-text-white">Proveedores</h2>
+        <h2 class="is-text-align-center title is-2 has-text-white">Mantenimiento</h2>
         
            <table class="table">
              <div class="field is-grouped">
@@ -173,20 +173,29 @@
              </div>
              <thead>
                <tr>
-                 <th><abbr>id</abbr></th>
-                 <th>Nit</th>
-                 <th><abbr>Proveedor</abbr></th>
-                 <th><abbr>Estado</abbr></th>
+                 <th><abbr>ID</abbr></th>
+                 <th>Placa Veh.</th>
+                 <th><abbr>Nombre Cond.</abbr></th>
+                 <th><abbr>Descripcion</abbr></th>
+                 <th><abbr>Valor</abbr></th>
+                 <th><abbr>Fecha</abbr></th>
+                 <th>Factura</th>
                  <th><abbr>Opciones</abbr></th>
+                 
                </tr>
              </thead>
              
              <tbody>
                <tr>
                  <th>1</th>
-                 <td>51545454</td>
+                 <td>TLP 245</td>
                  <td>Carlos Julio Perez Mora</td>
-                 <td>Activo</td>
+                 <td>Alineamiento de ejes traseros </td>
+                 <td>$250.000</td>
+                 <td>31/10/2021</td>
+                 <td>
+                        <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                 </td>
      
                  <td>
                    <div class="navbar-item has-dropdown is-hoverable">
@@ -209,9 +218,14 @@
                 </tr>
                 <tr>
                  <th>2</th>
-                 <td>45456456456</td>
-                 <td>Carlos Julio Perez Mora</td>
-                 <td>Activo</td>
+                 <td>TDM 735</td>
+                 <td>Brayan Camilo Merchan Navas</td>
+                 <td>Engrase general</td>
+                 <td>$180.000</td>
+                 <td>09/08/2022</td>
+                 <td>
+                  <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                </td>
      
                  <td>
                    <div class="navbar-item has-dropdown is-hoverable">
@@ -234,9 +248,14 @@
                 </tr>
                <tr>
                  <th>3</th>
-                 <td>5555454454</td>
-                 <td>Carlos Julio Perez Mora</td>
-                 <td>Activo</td>
+                 <td>SXS 198</td>
+                 <td>Jose Angel Lopez Sierra</td>
+                 <td>Cambio de bandas traseras</td>
+                 <td>$480.000</td>
+                 <td>07/09/2022</td>
+                 <td>
+                  <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                </td>
      
                  <td>
                    <div class="navbar-item has-dropdown is-hoverable">
@@ -259,9 +278,14 @@
                 
                 <tr>
                    <th>4</th>
-                   <td>5454215</td>
-                   <td>Carlos Julio Perez Mora</td>
-                   <td>Activo</td>
+                   <td>KUN 340</td>
+                   <td>Mauricio Calixto Perez </td>
+                   <td>Nuevos bujes</td>
+                   <td>$680.000</td>
+                   <td>17/04/2020</td>
+                   <td>
+                    <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                  </td>
                    <td>
                      <div class="navbar-item has-dropdown is-hoverable">
                        <a class="navbar-link"></a>
@@ -283,9 +307,14 @@
                     <tr>
                    
                      <th>5</th>
-                     <td>4546546541</td>
-                     <td>Carlos Julio Perez Mora</td>
-                     <td>Activo</td>
+                     <td>SZK 560</td>
+                     <td>Andres Felipe Barahona Beltran</td>
+                     <td>Lujos y luces trailer</td>
+                     <td>$350.000</td>
+                     <td>12/02/2022</td>
+                     <td>
+                      <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                     </td>
          
                      <td>
                        <div class="navbar-item has-dropdown is-hoverable">
@@ -307,9 +336,14 @@
 
                     <tr>
                        <th>6</th>
-                       <td>44654654</td>
-                       <td>Carlos Julio Perez Mora</td>
-                       <td>Activo</td>
+                       <td>XIK 352</td>
+                       <td>Jeison Fabian Arciniegas Orduz</td>
+                       <td>Arreglo hidraulico y aire acondicionado</td>
+                       <td>$1.500.000</td>                    
+                       <td>25/06/2021 </td>
+                       <td>
+                        <img src="./assets/logo/facture-logo.svg" alt="" style="width: 1.5rem">
+                       </td>
            
                        <td>
                          <div class="navbar-item has-dropdown is-hoverable">
@@ -346,52 +380,62 @@
        
           <div class="container-blue">
        
-            <h2 class="title is-2 has-text-white is-text-align-center">Modificar Proveedor</h2>
+            <h2 class="title is-2 has-text-white is-text-align-center">Modificar Mantenimiento</h2>
             <form action="">
               <div class="columns">
                 <div class="column is-half">
                   <div class="field">
-                    <label class="label has-text-white">Nombre de la Empresa
+                    <label class="label has-text-white">Placa Vehiculos
                       <div class="control">
-                        <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
+                        <input class="input" type="text" placeholder="Placa vehiculo" title="Placa vehiculo" required autofocus>
                       </div>
                     </label>
                   </div>
 
                   <div class="field">
-                    <label class="label has-text-white">Nit de la empresa
-                      <input class="input" type="text" placeholder="Nit de la empresa" title="apellido de usuario" required>
+                    <label class="label has-text-white">Nombre Conductor
+                      <input class="input" type="text" placeholder="Nombre Conductor" title="Nombre Conductor" required>
+                    </label>
+                  </div>
+                  <div class="field">
+                    <label class="label has-text-white">Valor Mantenimiento
+                      <input class="input" type="text" placeholder="Valor Mantenimiento" title="Valor Mantenimiento" required>
                     </label>
                   </div>
    
-                  <div class="field">
-                    <label class="label has-text-white">Propietario de la empresa
-                      <input class="input" type="text" placeholder="Propietario de la empresa" required>
-                    </label>
-                  </div>
+                  
 
                 </div>
    
                 <div class="column is-half">
                   <div class="field">
-                    <label class="label has-text-white">Numero de Telefono
+                    <label class="label has-text-white">Fecha
                       <div class="control">
-                        <input class="input" type="number" placeholder="Numero de Telefono" required>
+                        <input class="input" type="date" required>
                       </div>
                     </label>
                   </div>
-             
                   <div class="field">
-                    <label class="label has-text-white">Ciudad de ubicación
-                      <input class="input" type="text" placeholder="Ciudad de ubicacion" required>
+                    <label class="label has-text-white">Descripcion 
+                      <input class="input" type="text" placeholder="Descripcion" required>
                     </label>
                   </div>
-             
                   <div class="field">
-                    <label class="label has-text-white">Dirección
-                      <input class="input" id="typepass" type="text" placeholder="Direccion" required>
-                    </label>
+                    <div class="file">
+                      <label class="label has-text-white"> Agregar Factura
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                          <span class="file-icon">
+                            <img src="./assets/logo/upload-file.svg" alt="">
+                          </span>
+                          <span class="">
+                            Agregar Factura
+                          </span>
+                        </span>
+                      </label>
+                    </div>
                   </div>
+                
    
                 </div>
               </div>
@@ -402,7 +446,7 @@
                    </div>
        
                    <div class="control grouped">
-                    <a href="./proveedores.html">
+                    <a href="./mantenimiento.html">
                       <button type="button" class="button is-link is-light">Cancelar</button>
                     </a>
                    </div>
@@ -423,15 +467,15 @@
    <div class="modal-content" >
      <div class="container-blue container-center" >
       <img class="image-delete" src="./assets/images/delete.svg" alt="">
-       <h1 class="title is-1 has-text-white">¿Esta seguro de eliminar este proveedor?</h1>
+       <h1 class="title is-1 has-text-white">¿Esta seguro de eliminar este mantenimiento?</h1>
        <div class="field is-grouped is-flex is-justify-content-center">
          <div class="control">
-          <a href="./proveedores.html">
+          <a href="./mantenimiento.html">
             <button class="button is-light">Si</button>
           </a>
          </div>
          <div class="control">
-          <a href="./proveedores.html">
+          <a href="./mantenimiento.html">
             <button class="button is-link is-danger">No</button>
           </a>
          </div>
@@ -448,71 +492,73 @@
           
           <div class="container-blue">
        
-            <h2 class="is-text-align-center title is-2 has-text-white">Registrar proveedor</h2>
-        
-    
-    <form action="">
-        <div class="columns">
-            <div class="column is-half">
-                <div class="field">
-                    <label class="label has-text-white">Nombre de la Empresa</label>
-                    <div class="control">
-                      <input class="input" type="text" placeholder="Nombre de la Empresa" title="nombre de usuario" required autofocus>
-                    </div>
-                </div>
-      
-                <div class="field">
-                    <label class="label has-text-white">Nit de la empresa</label>
-                    <input class="input" type="text" placeholder="Nit de la empresa" title="apellido de usuario" required>
-                </div>
+            <h2 class="title is-2 has-text-white is-text-align-center">Agregar Mantenimiento</h2>
+            <form action="">
+              <div class="columns">
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label has-text-white">Placa Vehiculos
+                      <div class="control">
+                        <input class="input" type="text" placeholder="Placa vehiculo" title="Placa vehiculo" required autofocus>
+                      </div>
+                    </label>
+                  </div>
 
-                <div class="field">
-                    <label class="label has-text-white">Propietario de la empresa</label>
-                    <input class="input" type="text" placeholder="Propietario de la empresa" required>
-                </div>
-      
-                <div class="field">
-                    <label class="label has-text-white">Tipo de producto</label>
-                    <div class="control">
-                        <div class="select">
-                            <select title="selecciona tipo de carga">
-                                <option>Liquido</option>
-                                <option>Solido</option>
-                                <option>Ganado</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                  <div class="field">
+                    <label class="label has-text-white">Nombre Conductor
+                      <input class="input" type="text" placeholder="Nombre Conductor" title="Nombre Conductor" required>
+                    </label>
+                  </div>
+                  <div class="field">
+                    <label class="label has-text-white">Valor Mantenimiento
+                      <input class="input" type="text" placeholder="Valor Mantenimiento" title="Valor Mantenimiento" required>
+                    </label>
+                  </div>
+   
+                  
 
-            <div class="column is-half">
-                <div class="field">
-                    <label class="label has-text-white">Numero de Telefono</label>
-                    <div class="control">
-                        <input class="input" type="number" placeholder="Numero de Telefono" required>
+                </div>
+   
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label has-text-white">Fecha
+                      <div class="control">
+                        <input class="input" type="date" required>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="field">
+                    <label class="label has-text-white">Descripcion 
+                      <input class="input" type="text" placeholder="Descripcion" required>
+                    </label>
+                  </div>
+
+                  <div class="field">
+                    <div class="file">
+                      <label class="label has-text-white"> Agregar Factura
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                          <span class="file-icon">
+                            <img src="./assets/logo/upload-file.svg" alt="">
+                          </span>
+                          <span class="file-label">
+                            Agregar Factura
+                          </span>
+                        </span>
+                      </label>
                     </div>
-                </div>
-          
-                <div class="field">
-                    <label class="label has-text-white">Ciudad de ubicacion</label>
-                    <input class="input" type="text" placeholder="Ciudad de ubicacion" required>
-                </div>
-          
-                <div class="field">
-                    <label class="label has-text-white">Direccion</label>
-                    <input class="input" id="typepass" type="text" placeholder="Direccion" required>
-                    
-                </div>
+                  </div>
+                
         
               </div>
             </div>
             <div class="field is-grouped">
                 <div class="control grouped">
-                    <a href="./proveedores.html"><button type="submit" class="button is-link">Registrar</button></a>
+                    <a href="./mantenimiento.html"><button type="submit" class="button is-link">Registrar</button></a>
                 </div>
     
                 <div class="control grouped">
-                  <a href="./proveedores.html"><button type="button" class="button is-light">Cancelar</button></a>
+                  <a href="./mantenimiento.html"><button type="button" class="button is-light">Cancelar</button></a>
                 </div>
                   
                 <div class="control grouped">
