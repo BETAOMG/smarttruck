@@ -17,14 +17,15 @@
   background-color: var(--azulOscuro);
  }
 
+ header{
+  margin: 0 5rem;
+ }
+ 
  .container-logo{
    margin: auto;
    width: 25rem;
  }
 
- header{
-  margin: 0 5rem;
- }
 
 nav{
   height: 60px;
