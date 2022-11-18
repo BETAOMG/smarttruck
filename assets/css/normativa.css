@@ -42,13 +42,10 @@
   width: 100%;
 }
  
-.container-blue:hover, h4:hover{
+.hoverable:hover, h4:hover{
   background-color: var(--azulGris);
-  
- 
- 
-
 }
+
  .modal button:hover{
   background-color: rgb(172, 187, 196);
  }

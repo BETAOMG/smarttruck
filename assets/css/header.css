@@ -38,10 +38,14 @@ nav{
   border-radius: 10px;
 }
 
+.navbar-menu{
+  border-radius: 0 0 10px 10px;
+}
+
 nav ul{
-   list-style: none;
-   display: inline-block;
-   padding:18px;
+  list-style: none;
+  display: inline-block;
+  padding:18px;
 }
 
 nav ul li{
