@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="./assets/images/logocortado.svg">
     <link rel="stylesheet" href="./assets/css/foot.css">
     <script src="./assets/javascript/nav-bar.js"></script>
+    <script src="./assets/javascript/modal.js"></script>
     <link rel="stylesheet" href="./assets/css/proveedores.css">
 </head>
 <body>
@@ -151,76 +152,69 @@
   </header>
 
 
-   <section class="contenedor-formulario contenedor">
-        
-    <div class="columns">
-        <div class="imagen-formulario"></div>
-        <div class="column is-full">
-            <h2 class="is-text-align-center title is-2 has-text-white">Documentacion</h2>
-        </div>
-    </div>
-    <div >
+  <main>
 
-
-   
-        
-      
-    
-      <div class="container">
-        <div class="table-flex">
-          <table class="table">
-            <div class="field is-grouped">
-              <p class="control is-expanded">
-                <input class="input" type="text" placeholder="Buscar Archivo">
-              </p>
-               <a href="#"> <img class="logo-agregar-carpeta" src="./assets/images/image 11.svg" alt=""></a><a href="#"><img class="logo-agregar"  src="./assets/images/add.png" alt="10px"></a>
-            </div>
-            <thead>
-              <tr>
-                <th><abbr title="id">Archivo</abbr></th>
-                <th>Descripcion</th>
-                <th><abbr title="Conductor">Tamaño</abbr></th>
-                <th><abbr title="Estado">Fecha</abbr></th>
-                
-                  
-                    
-              
-              </abbr></th>
-              </tr>
-            </thead>
+    <section class="container-main">
             
-            <tbody>
-              <tr>
-                <th>----</th>
-                <td>----</td>
-                <td>----</td>
-                <td>----</td>
-    
-                
-                
-                
-                </tr>
-                <tr>
-                    <th>----</th>
-                    <td>----</td>
-                    <td>----</td>
-                    <td>----</td>
-        
-                    
-                    
-                    
-                    </tr>
-              
-                
-            </tbody>
-          </table>
-        </div>
-    </div>
-    
-    
-    </div>
-</section>
+      <div class="container-blue">
+        <h2 class="title is-2 has-text-white is-text-align-center">Documentacion</h2>
 
+        <table class="table">
+          <div class="field is-grouped">
+            <p class="control is-expanded">
+              <input class="input" type="text" placeholder="Buscar">
+            </p>
+            <button class="button button-add js-modal-trigger" data-target="modal-add" type="button" style="width: 2.5rem;">
+              <img src="./assets/images/add.png" alt="Agregar">
+              <div class="overlay">
+                <span class="span-add has-text-white">Agregar</span>
+              </div>
+            </button>
+          </div>
+        <thead>
+          <tr>
+            <th><abbr>id</abbr></th>
+            <th>Archivo</th>
+            <th><abbr>Descripcion</abbr></th>
+            <th><abbr>Tamaño</abbr></th>
+            <th><abbr>Fecha</abbr></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>A589</td>
+            <td>xxxxxxxxxxxxxxxxxxxxxxxxx</td>
+            <td>Kb</td>
+            <td>23-05-2022</td>
+
+            
+            
+            
+            </tr>
+            
+                
+                
+               
+              <tr>
+                <tr>
+                  <th>2</th>
+                  <td>A598</td>
+                  <td>xxxxxxxxxxxxxxxxxxxxxxxxx</td>
+                  <td>Mb</td>
+                  <td>23-06-2022</td>
+      
+                  
+                </tr>
+              </tr>
+        </tbody>
+        </table>
+      </div>
+    </section>
+
+    
+
+  </main>
   
 <footer>
         
